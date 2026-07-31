@@ -64,18 +64,9 @@ Exemplo de fonte:
 A página ficará em:
 
 ```text
-https://osmarrcs.github.io/radar-concursos-ti/
+https://xxxxx.github.io/radar-concursos-ti/
 ```
 
-## Testar localmente
-
-Como o navegador bloqueia `fetch()` ao abrir o HTML diretamente, execute na pasta do projeto:
-
-```bash
-python -m http.server 8000 --directory docs
-```
-
-Abra `http://localhost:8000`.
 
 ## Atualização dos dados
 
