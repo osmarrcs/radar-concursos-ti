@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Radar gratuito de concursos públicos de TI com histórico, notas do último chamado, vacância e previsibilidade.">
+  <title>Radar de Concursos de TI</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">PROJETO OPEN SOURCE</p>
+      <h1>Radar de Concursos Públicos de TI</h1>
+      <p class="subtitle">Consulte concursos regionais e nacionais por estado, carreira, órgão e especialidade. Veja os três concursos mais recentes, vacância, validade e nota do último chamado.</p>
+    </div>
+    <div class="hero-status">
+      <span id="updatedAt">Base ainda não carregada</span>
+      <span class="status-dot"></span>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="summary" aria-label="Resumo da base">
+    <article class="metric"><span>Órgãos</span><strong id="metricOrgans">0</strong></article>
+    <article class="metric"><span>Concursos</span><strong id="metricCompetitions">0</strong></article>
+    <article class="metric"><span>Carreiras</span><strong id="metricCareers">0</strong></article>
+    <article class="metric"><span>Registros oficiais</span><strong id="metricOfficial">0</strong></article>
+  </section>
+
+  <section class="notice" id="demoNotice" hidden>
+    <strong>Base de demonstração:</strong> os registros marcados como “Demonstração” são fictícios e servem apenas para validar o funcionamento do portal.
+  </section>
+
+  <section class="panel filters-panel">
+    <div class="section-title">
+      <div><p class="eyebrow dark">CONSULTA</p><h2>Filtrar concursos</h2></div>
+      <button id="clearFilters" class="button secondary" type="button">Limpar filtros</button>
+    </div>
+
+    <div class="scope-switch" role="group" aria-label="Âmbito da consulta">
+      <button class="scope-button active" data-scope="regional" type="button">Nordeste e capitais</button>
+      <button class="scope-button" data-scope="national" type="button">Federal nacional</button>
+      <button class="scope-button" data-scope="all" type="button">Todos</button>
+    </div>
+
+    <div class="filters-grid">
+      <label>Estado
+        <select id="stateFilter"><option value="">Todos os estados</option></select>
+      </label>
+      <label>Carreira
+        <select id="careerFilter"><option value="">Todas as carreiras</option></select>
+      </label>
+      <label>Órgão
+        <select id="organFilter"><option value="">Todos os órgãos</option></select>
+      </label>
+      <label>Especialidade
+        <select id="specialtyFilter"><option value="">Todas as especialidades</option></select>
+      </label>
+      <label class="search-label">Busca livre
+        <input id="searchFilter" type="search" placeholder="Ex.: segurança, TRT, analista de sistemas">
+      </label>
+    </div>
+  </section>
+
+  <section class="panel results-panel">
+    <div class="section-title">
+      <div><p class="eyebrow dark">RESULTADOS</p><h2 id="resultsTitle">Concursos encontrados</h2></div>
+      <span id="resultCount" class="count-badge">0 registros</span>
+    </div>
+    <div id="emptyState" class="empty" hidden>
+      <h3>Nenhum concurso encontrado</h3>
+      <p>Altere os filtros ou cadastre dados oficiais em <code>data/competitions.json</code>.</p>
+    </div>
+    <div id="organGroups" class="organ-groups"></div>
+  </section>
+
+  <section class="panel methodology">
+    <div><p class="eyebrow dark">METODOLOGIA</p><h2>Como interpretar os dados</h2></div>
+    <div class="method-grid">
+      <article><h3>Último chamado</h3><p>Maior classificação efetivamente convocada ou nomeada, separada por modalidade, cargo, especialidade e localidade.</p></article>
+      <article><h3>Previsibilidade</h3><p>Índice de 0 a 100 baseado em validade do concurso anterior, vacância, pedido, autorização, comissão, banca e edital.</p></article>
+      <article><h3>Confiança</h3><p>Alta quando classificação e nomeação possuem fontes oficiais compatíveis. Média ou baixa quando falta alguma evidência.</p></article>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container">Radar de Concursos de TI • Código aberto • Dados devem ser confirmados nas fontes oficiais</div></footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
