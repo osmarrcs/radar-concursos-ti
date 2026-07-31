@@ -1,0 +1,835 @@
+{
+  "metadata": {
+    "updated_at": "2026-07-31",
+    "schema_version": "2.0",
+    "description": "Base hierárquica: órgão, concurso e cargo/especialidade. IFPE 2025 com vagas do edital oficial; chamadas e vacância permanecem pendentes de fonte específica."
+  },
+  "competitions": [
+    {
+      "organ_id": "ifpe",
+      "organ_name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "organ_acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "contest_id": "ifpe-tae-2025",
+      "contest_title": "Concurso TAE IFPE 2025 — Edital nº 39/2025",
+      "year": 2025,
+      "status": "Homologado",
+      "valid_until": "2027-12-09",
+      "reserve_list": true,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "lotation": "Campi e Reitoria do IFPE, conforme necessidade institucional",
+      "confidence": "média",
+      "is_official": true,
+      "verified_at": "2026-07-31",
+      "sources": [
+        {
+          "label": "Edital IFPE nº 39/2025 (PDF)",
+          "url": "https://portal.ifpe.edu.br/wp-content/uploads/2025/08/EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-DOU-Imprensa-Nacional.pdf"
+        },
+        {
+          "label": "Resultado final — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/ifpe-divulga-resultado-final-do-concurso-publico-para-tecnicos-administrativos/"
+        },
+        {
+          "label": "Homologação — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/homologado-resultado-final-do-concurso-para-tecnicos-administrativos-do-ifpe/"
+        },
+        {
+          "label": "Página da banca FUNCERN",
+          "url": "https://funcern.br/concursos/ifpe-tae-2025/"
+        }
+      ],
+      "collection_status": {
+        "found": false,
+        "code": "MISSING_OFFICIAL_SOURCE",
+        "reason": "Edital, resultado e homologação foram localizados; o ato consolidado do último convocado/nomeado por cargo ainda não foi cadastrado.",
+        "source": "fontes_oficiais"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "A quantidade de cargos vagos deve ser apurada separadamente em quadro de referência, transparência ou resposta oficial do IFPE.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte específica de vacância foi cadastrada para este cargo.",
+          "source": "vacancia"
+        }
+      },
+      "id": "ifpe-2025-208",
+      "position_code": "208",
+      "it_category": "Laboratórios e Suporte",
+      "position": "Técnico de Laboratório — Área Manutenção e Suporte em Informática",
+      "specialty": "Manutenção e Suporte em Informática",
+      "immediate_vacancies": 2,
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+    },
+    {
+      "organ_id": "ifpe",
+      "organ_name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "organ_acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "contest_id": "ifpe-tae-2025",
+      "contest_title": "Concurso TAE IFPE 2025 — Edital nº 39/2025",
+      "year": 2025,
+      "status": "Homologado",
+      "valid_until": "2027-12-09",
+      "reserve_list": true,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "lotation": "Campi e Reitoria do IFPE, conforme necessidade institucional",
+      "confidence": "média",
+      "is_official": true,
+      "verified_at": "2026-07-31",
+      "sources": [
+        {
+          "label": "Edital IFPE nº 39/2025 (PDF)",
+          "url": "https://portal.ifpe.edu.br/wp-content/uploads/2025/08/EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-DOU-Imprensa-Nacional.pdf"
+        },
+        {
+          "label": "Resultado final — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/ifpe-divulga-resultado-final-do-concurso-publico-para-tecnicos-administrativos/"
+        },
+        {
+          "label": "Homologação — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/homologado-resultado-final-do-concurso-para-tecnicos-administrativos-do-ifpe/"
+        },
+        {
+          "label": "Página da banca FUNCERN",
+          "url": "https://funcern.br/concursos/ifpe-tae-2025/"
+        }
+      ],
+      "collection_status": {
+        "found": false,
+        "code": "MISSING_OFFICIAL_SOURCE",
+        "reason": "Edital, resultado e homologação foram localizados; o ato consolidado do último convocado/nomeado por cargo ainda não foi cadastrado.",
+        "source": "fontes_oficiais"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "A quantidade de cargos vagos deve ser apurada separadamente em quadro de referência, transparência ou resposta oficial do IFPE.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte específica de vacância foi cadastrada para este cargo.",
+          "source": "vacancia"
+        }
+      },
+      "id": "ifpe-2025-211",
+      "position_code": "211",
+      "it_category": "Redes e Infraestrutura",
+      "position": "Técnico de Laboratório — Área Redes de Computadores",
+      "specialty": "Redes de Computadores",
+      "immediate_vacancies": 2,
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+    },
+    {
+      "organ_id": "ifpe",
+      "organ_name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "organ_acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "contest_id": "ifpe-tae-2025",
+      "contest_title": "Concurso TAE IFPE 2025 — Edital nº 39/2025",
+      "year": 2025,
+      "status": "Homologado",
+      "valid_until": "2027-12-09",
+      "reserve_list": true,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "lotation": "Campi e Reitoria do IFPE, conforme necessidade institucional",
+      "confidence": "média",
+      "is_official": true,
+      "verified_at": "2026-07-31",
+      "sources": [
+        {
+          "label": "Edital IFPE nº 39/2025 (PDF)",
+          "url": "https://portal.ifpe.edu.br/wp-content/uploads/2025/08/EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-DOU-Imprensa-Nacional.pdf"
+        },
+        {
+          "label": "Resultado final — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/ifpe-divulga-resultado-final-do-concurso-publico-para-tecnicos-administrativos/"
+        },
+        {
+          "label": "Homologação — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/homologado-resultado-final-do-concurso-para-tecnicos-administrativos-do-ifpe/"
+        },
+        {
+          "label": "Página da banca FUNCERN",
+          "url": "https://funcern.br/concursos/ifpe-tae-2025/"
+        }
+      ],
+      "collection_status": {
+        "found": false,
+        "code": "MISSING_OFFICIAL_SOURCE",
+        "reason": "Edital, resultado e homologação foram localizados; o ato consolidado do último convocado/nomeado por cargo ainda não foi cadastrado.",
+        "source": "fontes_oficiais"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "A quantidade de cargos vagos deve ser apurada separadamente em quadro de referência, transparência ou resposta oficial do IFPE.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte específica de vacância foi cadastrada para este cargo.",
+          "source": "vacancia"
+        }
+      },
+      "id": "ifpe-2025-213",
+      "position_code": "213",
+      "it_category": "Laboratórios de TI",
+      "position": "Técnico de Laboratório — Área Tecnologia da Informação",
+      "specialty": "Tecnologia da Informação",
+      "immediate_vacancies": 1,
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+    },
+    {
+      "organ_id": "ifpe",
+      "organ_name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "organ_acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "contest_id": "ifpe-tae-2025",
+      "contest_title": "Concurso TAE IFPE 2025 — Edital nº 39/2025",
+      "year": 2025,
+      "status": "Homologado",
+      "valid_until": "2027-12-09",
+      "reserve_list": true,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "lotation": "Campi e Reitoria do IFPE, conforme necessidade institucional",
+      "confidence": "média",
+      "is_official": true,
+      "verified_at": "2026-07-31",
+      "sources": [
+        {
+          "label": "Edital IFPE nº 39/2025 (PDF)",
+          "url": "https://portal.ifpe.edu.br/wp-content/uploads/2025/08/EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-DOU-Imprensa-Nacional.pdf"
+        },
+        {
+          "label": "Resultado final — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/ifpe-divulga-resultado-final-do-concurso-publico-para-tecnicos-administrativos/"
+        },
+        {
+          "label": "Homologação — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/homologado-resultado-final-do-concurso-para-tecnicos-administrativos-do-ifpe/"
+        },
+        {
+          "label": "Página da banca FUNCERN",
+          "url": "https://funcern.br/concursos/ifpe-tae-2025/"
+        }
+      ],
+      "collection_status": {
+        "found": false,
+        "code": "MISSING_OFFICIAL_SOURCE",
+        "reason": "Edital, resultado e homologação foram localizados; o ato consolidado do último convocado/nomeado por cargo ainda não foi cadastrado.",
+        "source": "fontes_oficiais"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "A quantidade de cargos vagos deve ser apurada separadamente em quadro de referência, transparência ou resposta oficial do IFPE.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte específica de vacância foi cadastrada para este cargo.",
+          "source": "vacancia"
+        }
+      },
+      "id": "ifpe-2025-214",
+      "position_code": "214",
+      "it_category": "Suporte, Sistemas e Redes",
+      "position": "Técnico de Tecnologia da Informação",
+      "specialty": "Tecnologia da Informação",
+      "immediate_vacancies": 8,
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+    },
+    {
+      "organ_id": "ifpe",
+      "organ_name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "organ_acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "contest_id": "ifpe-tae-2025",
+      "contest_title": "Concurso TAE IFPE 2025 — Edital nº 39/2025",
+      "year": 2025,
+      "status": "Homologado",
+      "valid_until": "2027-12-09",
+      "reserve_list": true,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "lotation": "Campi e Reitoria do IFPE, conforme necessidade institucional",
+      "confidence": "média",
+      "is_official": true,
+      "verified_at": "2026-07-31",
+      "sources": [
+        {
+          "label": "Edital IFPE nº 39/2025 (PDF)",
+          "url": "https://portal.ifpe.edu.br/wp-content/uploads/2025/08/EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-DOU-Imprensa-Nacional.pdf"
+        },
+        {
+          "label": "Resultado final — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/ifpe-divulga-resultado-final-do-concurso-publico-para-tecnicos-administrativos/"
+        },
+        {
+          "label": "Homologação — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/homologado-resultado-final-do-concurso-para-tecnicos-administrativos-do-ifpe/"
+        },
+        {
+          "label": "Página da banca FUNCERN",
+          "url": "https://funcern.br/concursos/ifpe-tae-2025/"
+        }
+      ],
+      "collection_status": {
+        "found": false,
+        "code": "MISSING_OFFICIAL_SOURCE",
+        "reason": "Edital, resultado e homologação foram localizados; o ato consolidado do último convocado/nomeado por cargo ainda não foi cadastrado.",
+        "source": "fontes_oficiais"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "A quantidade de cargos vagos deve ser apurada separadamente em quadro de referência, transparência ou resposta oficial do IFPE.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte específica de vacância foi cadastrada para este cargo.",
+          "source": "vacancia"
+        }
+      },
+      "id": "ifpe-2025-302",
+      "position_code": "302",
+      "it_category": "Desenvolvimento e Sistemas",
+      "position": "Analista de Tecnologia da Informação — Área Desenvolvimento",
+      "specialty": "Desenvolvimento de Sistemas",
+      "immediate_vacancies": 2,
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+    },
+    {
+      "organ_id": "ifpe",
+      "organ_name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "organ_acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "contest_id": "ifpe-tae-2025",
+      "contest_title": "Concurso TAE IFPE 2025 — Edital nº 39/2025",
+      "year": 2025,
+      "status": "Homologado",
+      "valid_until": "2027-12-09",
+      "reserve_list": true,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "lotation": "Campi e Reitoria do IFPE, conforme necessidade institucional",
+      "confidence": "média",
+      "is_official": true,
+      "verified_at": "2026-07-31",
+      "sources": [
+        {
+          "label": "Edital IFPE nº 39/2025 (PDF)",
+          "url": "https://portal.ifpe.edu.br/wp-content/uploads/2025/08/EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-DOU-Imprensa-Nacional.pdf"
+        },
+        {
+          "label": "Resultado final — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/ifpe-divulga-resultado-final-do-concurso-publico-para-tecnicos-administrativos/"
+        },
+        {
+          "label": "Homologação — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/homologado-resultado-final-do-concurso-para-tecnicos-administrativos-do-ifpe/"
+        },
+        {
+          "label": "Página da banca FUNCERN",
+          "url": "https://funcern.br/concursos/ifpe-tae-2025/"
+        }
+      ],
+      "collection_status": {
+        "found": false,
+        "code": "MISSING_OFFICIAL_SOURCE",
+        "reason": "Edital, resultado e homologação foram localizados; o ato consolidado do último convocado/nomeado por cargo ainda não foi cadastrado.",
+        "source": "fontes_oficiais"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "A quantidade de cargos vagos deve ser apurada separadamente em quadro de referência, transparência ou resposta oficial do IFPE.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte específica de vacância foi cadastrada para este cargo.",
+          "source": "vacancia"
+        }
+      },
+      "id": "ifpe-2025-303",
+      "position_code": "303",
+      "it_category": "Infraestrutura e Segurança",
+      "position": "Analista de Tecnologia da Informação — Área Infraestrutura e Segurança",
+      "specialty": "Infraestrutura e Segurança da Informação",
+      "immediate_vacancies": 1,
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+    },
+    {
+      "id": "ifpe-2019-ti-1",
+      "organ_id": "ifpe",
+      "organ_name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "organ_acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "contest_id": "ifpe-tae-2019",
+      "contest_title": "Concurso TAE IFPE 2019",
+      "year": 2019,
+      "it_category": "Suporte, Sistemas e Redes",
+      "position": "Técnico em Tecnologia da Informação",
+      "specialty": "Desenvolvimento",
+      "status": "Encerrado",
+      "immediate_vacancies": null,
+      "reserve_list": null,
+      "valid_until": "2023-01-01",
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "lotation": "IFPE",
+      "confidence": "baixa",
+      "is_official": true,
+      "verified_at": "2026-07-31",
+      "notes": "O cargo consta na notícia oficial; quantitativos e histórico de chamadas ainda precisam ser importados do edital e dos atos.",
+      "sources": [
+        {
+          "label": "Notícia oficial do edital 2019",
+          "url": "https://portal.ifpe.edu.br/noticias/ifpe-divulga-edital-de-concurso-para-cargos-tecnico-administrativos/"
+        }
+      ],
+      "collection_status": {
+        "found": false,
+        "code": "PARTIAL_DATA",
+        "reason": "Cargo localizado, mas vagas, resultado e último chamado ainda não foram consolidados.",
+        "source": "portal_ifpe"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      }
+    },
+    {
+      "id": "ifpe-2019-ti-2",
+      "organ_id": "ifpe",
+      "organ_name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "organ_acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "contest_id": "ifpe-tae-2019",
+      "contest_title": "Concurso TAE IFPE 2019",
+      "year": 2019,
+      "it_category": "Redes e Infraestrutura",
+      "position": "Técnico em Tecnologia da Informação",
+      "specialty": "Rede e Suporte",
+      "status": "Encerrado",
+      "immediate_vacancies": null,
+      "reserve_list": null,
+      "valid_until": "2023-01-01",
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "lotation": "IFPE",
+      "confidence": "baixa",
+      "is_official": true,
+      "verified_at": "2026-07-31",
+      "notes": "O cargo consta na notícia oficial; quantitativos e histórico de chamadas ainda precisam ser importados do edital e dos atos.",
+      "sources": [
+        {
+          "label": "Notícia oficial do edital 2019",
+          "url": "https://portal.ifpe.edu.br/noticias/ifpe-divulga-edital-de-concurso-para-cargos-tecnico-administrativos/"
+        }
+      ],
+      "collection_status": {
+        "found": false,
+        "code": "PARTIAL_DATA",
+        "reason": "Cargo localizado, mas vagas, resultado e último chamado ainda não foram consolidados.",
+        "source": "portal_ifpe"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      }
+    },
+    {
+      "id": "ifpe-2019-ti-3",
+      "organ_id": "ifpe",
+      "organ_name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "organ_acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "contest_id": "ifpe-tae-2019",
+      "contest_title": "Concurso TAE IFPE 2019",
+      "year": 2019,
+      "it_category": "Laboratórios e Suporte",
+      "position": "Técnico de Laboratório",
+      "specialty": "Manutenção e Suporte em Informática",
+      "status": "Encerrado",
+      "immediate_vacancies": null,
+      "reserve_list": null,
+      "valid_until": "2023-01-01",
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "lotation": "IFPE",
+      "confidence": "baixa",
+      "is_official": true,
+      "verified_at": "2026-07-31",
+      "notes": "O cargo consta na notícia oficial; quantitativos e histórico de chamadas ainda precisam ser importados do edital e dos atos.",
+      "sources": [
+        {
+          "label": "Notícia oficial do edital 2019",
+          "url": "https://portal.ifpe.edu.br/noticias/ifpe-divulga-edital-de-concurso-para-cargos-tecnico-administrativos/"
+        }
+      ],
+      "collection_status": {
+        "found": false,
+        "code": "PARTIAL_DATA",
+        "reason": "Cargo localizado, mas vagas, resultado e último chamado ainda não foram consolidados.",
+        "source": "portal_ifpe"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      }
+    },
+    {
+      "id": "ifpe-2019-ti-4",
+      "organ_id": "ifpe",
+      "organ_name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "organ_acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "contest_id": "ifpe-tae-2019",
+      "contest_title": "Concurso TAE IFPE 2019",
+      "year": 2019,
+      "it_category": "Laboratórios e Redes",
+      "position": "Técnico de Laboratório",
+      "specialty": "Rede de Computadores",
+      "status": "Encerrado",
+      "immediate_vacancies": null,
+      "reserve_list": null,
+      "valid_until": "2023-01-01",
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "lotation": "IFPE",
+      "confidence": "baixa",
+      "is_official": true,
+      "verified_at": "2026-07-31",
+      "notes": "O cargo consta na notícia oficial; quantitativos e histórico de chamadas ainda precisam ser importados do edital e dos atos.",
+      "sources": [
+        {
+          "label": "Notícia oficial do edital 2019",
+          "url": "https://portal.ifpe.edu.br/noticias/ifpe-divulga-edital-de-concurso-para-cargos-tecnico-administrativos/"
+        }
+      ],
+      "collection_status": {
+        "found": false,
+        "code": "PARTIAL_DATA",
+        "reason": "Cargo localizado, mas vagas, resultado e último chamado ainda não foram consolidados.",
+        "source": "portal_ifpe"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      }
+    },
+    {
+      "id": "ifpe-2016-demo-ti",
+      "organ_id": "ifpe",
+      "organ_name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "organ_acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "contest_id": "ifpe-tae-2016",
+      "contest_title": "Concurso TAE IFPE 2016",
+      "year": 2016,
+      "it_category": "Tecnologia da Informação",
+      "position": "Técnico de Tecnologia da Informação",
+      "specialty": "Tecnologia da Informação",
+      "status": "Encerrado",
+      "immediate_vacancies": null,
+      "reserve_list": null,
+      "valid_until": "2020-01-01",
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "lotation": "IFPE",
+      "confidence": "baixa",
+      "is_official": false,
+      "verified_at": "2026-07-31",
+      "notes": "Registro demonstrativo até a inclusão de fontes oficiais do certame.",
+      "sources": [],
+      "collection_status": {
+        "found": false,
+        "code": "SOURCE_NOT_CONFIGURED",
+        "reason": "Fontes oficiais deste concurso ainda não foram cadastradas.",
+        "source": "base_local"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      }
+    },
+    {
+      "id": "demo-dataprev-2024-seg",
+      "organ_id": "dataprev",
+      "organ_name": "Empresa de Tecnologia e Informações da Previdência",
+      "organ_acronym": "DATAPREV",
+      "career": "Empresas Públicas de TI",
+      "sphere": "Federal",
+      "scope": "national",
+      "state": "BR",
+      "city": "Nacional",
+      "year": 2024,
+      "position": "Analista de Tecnologia da Informação",
+      "specialty": "Segurança da Informação",
+      "status": "Demonstração histórica",
+      "immediate_vacancies": 5,
+      "current_vacancy": null,
+      "last_called_rank": 12,
+      "last_called_score": 76.5,
+      "total_appointed": 12,
+      "quota_type": "Ampla concorrência",
+      "valid_until": "",
+      "predictability_score": 20,
+      "next_stage": "Aguardar fonte oficial",
+      "exam_in_state": null,
+      "lotation": "Nacional / conforme edital",
+      "confidence": "baixa",
+      "is_official": false,
+      "verified_at": "2026-07-31",
+      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional.",
+      "collection_status": {
+        "found": true,
+        "code": "OK",
+        "reason": "Registro de teste carregado da base local; nenhuma busca externa executada.",
+        "source": "base_local"
+      },
+      "sources": [],
+      "contest_id": "dataprev-2024",
+      "contest_title": "Concurso Dataprev 2024",
+      "it_category": "Segurança da Informação",
+      "reserve_list": true,
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada em fonte oficial.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      }
+    },
+    {
+      "id": "demo-dataprev-2016-seg",
+      "organ_id": "dataprev",
+      "organ_name": "Empresa de Tecnologia e Informações da Previdência",
+      "organ_acronym": "DATAPREV",
+      "career": "Empresas Públicas de TI",
+      "sphere": "Federal",
+      "scope": "national",
+      "state": "BR",
+      "city": "Nacional",
+      "year": 2016,
+      "position": "Analista de Tecnologia da Informação",
+      "specialty": "Segurança da Informação",
+      "status": "Demonstração histórica",
+      "immediate_vacancies": 3,
+      "current_vacancy": null,
+      "last_called_rank": 9,
+      "last_called_score": 74.0,
+      "total_appointed": 9,
+      "quota_type": "Ampla concorrência",
+      "valid_until": "",
+      "predictability_score": 20,
+      "next_stage": "Aguardar fonte oficial",
+      "exam_in_state": null,
+      "lotation": "Nacional / conforme edital",
+      "confidence": "baixa",
+      "is_official": false,
+      "verified_at": "2026-07-31",
+      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional.",
+      "collection_status": {
+        "found": true,
+        "code": "OK",
+        "reason": "Registro de teste carregado da base local; nenhuma busca externa executada.",
+        "source": "base_local"
+      },
+      "sources": [],
+      "contest_id": "dataprev-2016",
+      "contest_title": "Concurso Dataprev 2016",
+      "it_category": "Segurança da Informação",
+      "reserve_list": true,
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada em fonte oficial.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      }
+    },
+    {
+      "id": "demo-dataprev-2012-seg",
+      "organ_id": "dataprev",
+      "organ_name": "Empresa de Tecnologia e Informações da Previdência",
+      "organ_acronym": "DATAPREV",
+      "career": "Empresas Públicas de TI",
+      "sphere": "Federal",
+      "scope": "national",
+      "state": "BR",
+      "city": "Nacional",
+      "year": 2012,
+      "position": "Analista de Tecnologia da Informação",
+      "specialty": "Segurança da Informação",
+      "status": "Demonstração histórica",
+      "immediate_vacancies": 2,
+      "current_vacancy": null,
+      "last_called_rank": 6,
+      "last_called_score": 71.5,
+      "total_appointed": 6,
+      "quota_type": "Ampla concorrência",
+      "valid_until": "",
+      "predictability_score": 20,
+      "next_stage": "Aguardar fonte oficial",
+      "exam_in_state": null,
+      "lotation": "Nacional / conforme edital",
+      "confidence": "baixa",
+      "is_official": false,
+      "verified_at": "2026-07-31",
+      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional.",
+      "collection_status": {
+        "found": true,
+        "code": "OK",
+        "reason": "Registro de teste carregado da base local; nenhuma busca externa executada.",
+        "source": "base_local"
+      },
+      "sources": [],
+      "contest_id": "dataprev-2012",
+      "contest_title": "Concurso Dataprev 2012",
+      "it_category": "Segurança da Informação",
+      "reserve_list": true,
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada em fonte oficial.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      }
+    }
+  ]
+}

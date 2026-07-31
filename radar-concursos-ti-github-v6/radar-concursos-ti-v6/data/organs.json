@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "updated_at": "2026-07-31",
+    "schema_version": "1.0"
+  },
+  "organs": [
+    {
+      "id": "ifpe",
+      "name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco"
+    },
+    {
+      "id": "dataprev",
+      "name": "Empresa de Tecnologia e Informações da Previdência",
+      "acronym": "DATAPREV",
+      "career": "Empresas Públicas de TI",
+      "sphere": "Federal",
+      "scope": "national",
+      "state": "BR",
+      "city": "Nacional"
+    },
+    {
+      "id": "tjpe",
+      "name": "Tribunal de Justiça de Pernambuco",
+      "acronym": "TJPE",
+      "career": "Tribunais",
+      "sphere": "Estadual",
+      "scope": "regional",
+      "state": "PE",
+      "city": "Recife"
+    }
+  ]
+}
