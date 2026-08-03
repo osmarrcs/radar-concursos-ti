@@ -1,0 +1,61 @@
+name: Alertas e métricas por órgão
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+      timezone: 'America/Recife'
+    - cron: '30 8 * * *'
+      timezone: 'America/Recife'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'scan = novidades; digest = novidades + métricas; dry-run = simulação'
+        required: true
+        default: scan
+        type: choice
+        options: [scan, digest, dry-run]
+permissions:
+  contents: write
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: src
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Testes de busca e alertas
+        run: python -m unittest tests.unit.test_search tests.unit.test_alert_monitor -v
+      - name: Consultar fontes e enviar Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        shell: bash
+        run: |
+          ARGS=""
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.mode }}" == "digest" ]]; then ARGS="--send-metrics"; fi
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.mode }}" == "dry-run" ]]; then ARGS="--dry-run --send-metrics"; fi
+          if [[ "${{ github.event.schedule }}" == "30 8 * * *" ]]; then ARGS="--send-metrics"; fi
+          python -m radar_concursos.alerts.monitor $ARGS
+      - name: Salvar relatório da execução
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: metricas-alertas-${{ github.run_number }}
+          path: data/alert_last_run.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Persistir somente estado e atualizações novas
+        if: github.event_name != 'workflow_dispatch' || inputs.mode != 'dry-run'
+        run: |
+          if git diff --quiet -- data/alert_state.json data/updates.json data/contests.json; then
+            echo "Nenhuma alteração persistente."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/alert_state.json data/updates.json data/contests.json
+          git commit -m "chore(alerts): registrar atualizações automáticas [skip alerts]"
+          git pull --rebase
+          git push
