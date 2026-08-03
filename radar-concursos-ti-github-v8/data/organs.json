@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "schema_version": "4.0",
+    "description": "Catálogo de órgãos monitorados."
+  },
+  "organs": [
+    {
+      "id": "ifpe",
+      "name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "alert_sources": [
+        {
+          "label": "IFPE — notícias com a tag concurso",
+          "url": "https://portal.ifpe.edu.br/tag/concurso/",
+          "type": "html"
+        }
+      ],
+      "official_domains": [
+        "ifpe.edu.br",
+        "portal.ifpe.edu.br"
+      ],
+      "territory_id": ""
+    },
+    {
+      "id": "dataprev",
+      "name": "Empresa de Tecnologia e Informações da Previdência",
+      "acronym": "DATAPREV",
+      "career": "Empresas Públicas de TI",
+      "sphere": "Federal",
+      "scope": "national",
+      "state": "BR",
+      "city": "Nacional",
+      "alert_sources": [
+        {
+          "label": "Dataprev — página oficial de concursos",
+          "url": "https://www.dataprev.gov.br/conheca-dataprev-faca-parte-da-dataprev/concursos",
+          "type": "html"
+        }
+      ],
+      "official_domains": [
+        "dataprev.gov.br"
+      ],
+      "territory_id": ""
+    },
+    {
+      "id": "tjpe",
+      "name": "Tribunal de Justiça de Pernambuco",
+      "acronym": "TJPE",
+      "career": "Tribunais",
+      "sphere": "Estadual",
+      "scope": "regional",
+      "state": "PE",
+      "city": "Recife",
+      "alert_sources": [],
+      "official_domains": [
+        "tjpe.jus.br"
+      ],
+      "territory_id": ""
+    },
+    {
+      "id": "ufpe",
+      "name": "Universidade Federal de Pernambuco",
+      "acronym": "UFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "alert_sources": [
+        {
+          "label": "UFPE/FADE — concurso TAE 2026",
+          "url": "https://www.fadeconcursos.org.br/concursoufpe2026",
+          "type": "html"
+        }
+      ],
+      "official_domains": [
+        "ufpe.br",
+        "fadeconcursos.org.br",
+        "in.gov.br"
+      ],
+      "territory_id": ""
+    },
+    {
+      "id": "pf",
+      "name": "Polícia Federal",
+      "acronym": "PF",
+      "career": "Carreiras Policiais e Inteligência",
+      "sphere": "Federal",
+      "scope": "national",
+      "state": "BR",
+      "city": "Nacional",
+      "alert_sources": [
+        {
+          "label": "Polícia Federal — concursos",
+          "url": "https://www.gov.br/pf/pt-br/acesso-a-informacao/servidores/concursos",
+          "type": "html"
+        }
+      ],
+      "official_domains": [
+        "gov.br",
+        "pf.gov.br"
+      ],
+      "territory_id": ""
+    },
+    {
+      "id": "prf",
+      "name": "Polícia Rodoviária Federal",
+      "acronym": "PRF",
+      "career": "Carreiras Policiais e Inteligência",
+      "sphere": "Federal",
+      "scope": "national",
+      "state": "BR",
+      "city": "Nacional",
+      "alert_sources": [
+        {
+          "label": "PRF — concursos e seleções",
+          "url": "https://www.gov.br/prf/pt-br/acesso-a-informacao/servidores/concursos-e-selecoes",
+          "type": "html"
+        }
+      ],
+      "official_domains": [
+        "gov.br",
+        "prf.gov.br"
+      ],
+      "territory_id": ""
+    },
+    {
+      "id": "abin",
+      "name": "Agência Brasileira de Inteligência",
+      "acronym": "ABIN",
+      "career": "Carreiras Policiais e Inteligência",
+      "sphere": "Federal",
+      "scope": "national",
+      "state": "BR",
+      "city": "Nacional",
+      "alert_sources": [
+        {
+          "label": "ABIN — concurso",
+          "url": "https://www.gov.br/abin/pt-br/institucional/carreira/concurso",
+          "type": "html"
+        }
+      ],
+      "official_domains": [
+        "gov.br",
+        "abin.gov.br"
+      ],
+      "territory_id": ""
+    },
+    {
+      "id": "serpro",
+      "name": "Serviço Federal de Processamento de Dados",
+      "acronym": "SERPRO",
+      "career": "Empresas Públicas de TI",
+      "sphere": "Federal",
+      "scope": "national",
+      "state": "BR",
+      "city": "Nacional",
+      "alert_sources": [
+        {
+          "label": "SERPRO — concurso público",
+          "url": "https://www.transparencia.serpro.gov.br/acesso-a-informacao/servidores/concurso-publico",
+          "type": "html"
+        }
+      ],
+      "official_domains": [
+        "serpro.gov.br"
+      ],
+      "territory_id": ""
+    },
+    {
+      "id": "ati-pe",
+      "name": "Agência Estadual de Tecnologia da Informação de Pernambuco",
+      "acronym": "ATI-PE",
+      "career": "Tecnologia Governamental",
+      "sphere": "Estadual",
+      "scope": "regional",
+      "state": "PE",
+      "city": "Recife",
+      "alert_sources": [
+        {
+          "label": "ATI-PE — notícias",
+          "url": "https://www.ati.pe.gov.br/",
+          "type": "html"
+        }
+      ],
+      "official_domains": [
+        "ati.pe.gov.br",
+        "pe.gov.br"
+      ],
+      "territory_id": ""
+    },
+    {
+      "id": "emprel",
+      "name": "Empresa Municipal de Informática do Recife",
+      "acronym": "EMPREL",
+      "career": "Tecnologia Governamental",
+      "sphere": "Municipal",
+      "scope": "regional",
+      "state": "PE",
+      "city": "Recife",
+      "alert_sources": [
+        {
+          "label": "EMPREL — notícias",
+          "url": "https://www.emprel.gov.br/noticias",
+          "type": "html"
+        }
+      ],
+      "official_domains": [
+        "emprel.gov.br",
+        "recife.pe.gov.br"
+      ],
+      "territory_id": "2611606"
+    },
+    {
+      "id": "mppe",
+      "name": "Ministério Público de Pernambuco",
+      "acronym": "MPPE",
+      "career": "Ministérios Públicos",
+      "sphere": "Estadual",
+      "scope": "regional",
+      "state": "PE",
+      "city": "Recife",
+      "alert_sources": [
+        {
+          "label": "MPPE — concursos e seleções",
+          "url": "https://transparencia.mppe.mp.br/concursos-e-selecoes",
+          "type": "html"
+        }
+      ],
+      "official_domains": [
+        "mppe.mp.br"
+      ],
+      "territory_id": ""
+    }
+  ]
+}

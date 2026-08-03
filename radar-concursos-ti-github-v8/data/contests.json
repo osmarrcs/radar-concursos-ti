@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "schema_version": "3.0",
+    "description": "Concursos e informações comuns ao edital."
+  },
+  "contests": [
+    {
+      "id": "dataprev-2024",
+      "organ_id": "dataprev",
+      "title": "Concurso Dataprev 2024",
+      "year": 2024,
+      "status": "Demonstração histórica",
+      "valid_until": "",
+      "reserve_list": true,
+      "lotation": "Nacional / conforme edital",
+      "confidence": "baixa",
+      "is_official": false,
+      "verified_at": "2026-07-31",
+      "sources": [],
+      "collection_status": {
+        "found": true,
+        "code": "OK",
+        "reason": "Registro de teste carregado da base local; nenhuma busca externa executada.",
+        "source": "base_local"
+      },
+      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional.",
+      "application_start": "",
+      "application_end": ""
+    },
+    {
+      "id": "dataprev-2016",
+      "organ_id": "dataprev",
+      "title": "Concurso Dataprev 2016",
+      "year": 2016,
+      "status": "Demonstração histórica",
+      "valid_until": "",
+      "reserve_list": true,
+      "lotation": "Nacional / conforme edital",
+      "confidence": "baixa",
+      "is_official": false,
+      "verified_at": "2026-07-31",
+      "sources": [],
+      "collection_status": {
+        "found": true,
+        "code": "OK",
+        "reason": "Registro de teste carregado da base local; nenhuma busca externa executada.",
+        "source": "base_local"
+      },
+      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional.",
+      "application_start": "",
+      "application_end": ""
+    },
+    {
+      "id": "dataprev-2012",
+      "organ_id": "dataprev",
+      "title": "Concurso Dataprev 2012",
+      "year": 2012,
+      "status": "Demonstração histórica",
+      "valid_until": "",
+      "reserve_list": true,
+      "lotation": "Nacional / conforme edital",
+      "confidence": "baixa",
+      "is_official": false,
+      "verified_at": "2026-07-31",
+      "sources": [],
+      "collection_status": {
+        "found": true,
+        "code": "OK",
+        "reason": "Registro de teste carregado da base local; nenhuma busca externa executada.",
+        "source": "base_local"
+      },
+      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional.",
+      "application_start": "",
+      "application_end": ""
+    },
+    {
+      "id": "ifpe-tae-2025",
+      "organ_id": "ifpe",
+      "title": "Concurso TAE IFPE 2025 — Edital nº 39/2025",
+      "year": 2025,
+      "status": "Homologado",
+      "valid_until": "2027-12-09",
+      "reserve_list": true,
+      "lotation": "Campi e Reitoria do IFPE, conforme necessidade institucional",
+      "confidence": "média",
+      "is_official": true,
+      "verified_at": "2026-07-31",
+      "sources": [
+        {
+          "label": "Edital IFPE nº 39/2025 (PDF)",
+          "url": "https://portal.ifpe.edu.br/wp-content/uploads/2025/08/EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-EDITAL-REI_IFPE-no-39-DE-12-DE-AGOSTO-DE-2025-DOU-Imprensa-Nacional.pdf"
+        },
+        {
+          "label": "Resultado final — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/ifpe-divulga-resultado-final-do-concurso-publico-para-tecnicos-administrativos/"
+        },
+        {
+          "label": "Homologação — IFPE",
+          "url": "https://portal.ifpe.edu.br/noticias/homologado-resultado-final-do-concurso-para-tecnicos-administrativos-do-ifpe/"
+        },
+        {
+          "label": "Página da banca FUNCERN",
+          "url": "https://funcern.br/concursos/ifpe-tae-2025/"
+        }
+      ],
+      "collection_status": {
+        "found": false,
+        "code": "MISSING_OFFICIAL_SOURCE",
+        "reason": "Edital, resultado e homologação foram localizados; o ato consolidado do último convocado/nomeado por cargo ainda não foi cadastrado.",
+        "source": "fontes_oficiais"
+      },
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada.",
+      "application_start": "",
+      "application_end": ""
+    },
+    {
+      "id": "ifpe-tae-2019",
+      "organ_id": "ifpe",
+      "title": "Concurso TAE IFPE 2019",
+      "year": 2019,
+      "status": "Encerrado",
+      "valid_until": "2023-01-01",
+      "reserve_list": null,
+      "lotation": "IFPE",
+      "confidence": "baixa",
+      "is_official": true,
+      "verified_at": "2026-07-31",
+      "sources": [
+        {
+          "label": "Notícia oficial do edital 2019",
+          "url": "https://portal.ifpe.edu.br/noticias/ifpe-divulga-edital-de-concurso-para-cargos-tecnico-administrativos/"
+        }
+      ],
+      "collection_status": {
+        "found": false,
+        "code": "PARTIAL_DATA",
+        "reason": "Cargo localizado, mas vagas, resultado e último chamado ainda não foram consolidados.",
+        "source": "portal_ifpe"
+      },
+      "notes": "O cargo consta na notícia oficial; quantitativos e histórico de chamadas ainda precisam ser importados do edital e dos atos.",
+      "application_start": "",
+      "application_end": ""
+    },
+    {
+      "id": "ifpe-tae-2016",
+      "organ_id": "ifpe",
+      "title": "Concurso TAE IFPE 2016",
+      "year": 2016,
+      "status": "Encerrado",
+      "valid_until": "2020-01-01",
+      "reserve_list": null,
+      "lotation": "IFPE",
+      "confidence": "baixa",
+      "is_official": false,
+      "verified_at": "2026-07-31",
+      "sources": [],
+      "collection_status": {
+        "found": false,
+        "code": "SOURCE_NOT_CONFIGURED",
+        "reason": "Fontes oficiais deste concurso ainda não foram cadastradas.",
+        "source": "base_local"
+      },
+      "notes": "Registro demonstrativo até a inclusão de fontes oficiais do certame.",
+      "application_start": "",
+      "application_end": ""
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "organ_id": "ufpe",
+      "title": "Concurso TAE UFPE 2026 — Edital nº 12/2026",
+      "year": 2026,
+      "status": "Edital publicado",
+      "valid_until": "",
+      "validity_years": 2,
+      "validity_rule": "2 anos a partir da homologação do resultado final, conforme o edital.",
+      "publication_date": "2026-08-03",
+      "edital_date": "2026-07-29",
+      "edital_number": "12",
+      "exam_location": "Região Metropolitana de Recife-PE",
+      "reserve_list": true,
+      "lotation": "Conforme cargo e edital",
+      "confidence": "alta",
+      "is_official": true,
+      "verified_at": "2026-08-03",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "OK",
+        "reason": "Edital anexado e cargos importados; vacância e chamadas dependem de fontes separadas.",
+        "source": "pdf_anexado"
+      },
+      "notes": "O edital informa vagas, lotação e regra de validade. Vacância atual, último chamado e nota não são inferidos do edital e devem ser apurados em documentos próprios.",
+      "application_start": "",
+      "application_end": ""
+    }
+  ]
+}
