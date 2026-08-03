@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "description": "Catálogo de órgãos monitorados."
+  },
+  "organs": [
+    {
+      "id": "ifpe",
+      "name": "Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco",
+      "acronym": "IFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "alert_sources": [
+        {
+          "label": "IFPE — notícias com a tag concurso",
+          "url": "https://portal.ifpe.edu.br/tag/concurso/",
+          "type": "html"
+        }
+      ]
+    },
+    {
+      "id": "dataprev",
+      "name": "Empresa de Tecnologia e Informações da Previdência",
+      "acronym": "DATAPREV",
+      "career": "Empresas Públicas de TI",
+      "sphere": "Federal",
+      "scope": "national",
+      "state": "BR",
+      "city": "Nacional",
+      "alert_sources": [
+        {
+          "label": "Dataprev — página oficial de concursos",
+          "url": "https://www.dataprev.gov.br/conheca-dataprev-faca-parte-da-dataprev/concursos",
+          "type": "html"
+        }
+      ]
+    },
+    {
+      "id": "tjpe",
+      "name": "Tribunal de Justiça de Pernambuco",
+      "acronym": "TJPE",
+      "career": "Tribunais",
+      "sphere": "Estadual",
+      "scope": "regional",
+      "state": "PE",
+      "city": "Recife",
+      "alert_sources": []
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "updated_at": "2026-07-31",
+    "schema_version": "2.0",
+    "description": "Órgãos selecionados pelo usuário para monitoramento de notícias e publicações oficiais."
+  },
+  "enabled": true,
+  "monitored_organs": [],
+  "keywords": [
+    "concurso",
+    "edital",
+    "retificação",
+    "inscrição",
+    "inscrições",
+    "banca",
+    "resultado",
+    "homologação",
+    "convocação",
+    "convoca",
+    "nomeação",
+    "nomeia",
+    "prorrogação",
+    "validade",
+    "comissão",
+    "autorização",
+    "vagas"
+  ],
+  "max_items_per_message": 8,
+  "first_run_behavior": "baseline"
+}

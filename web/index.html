@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Radar gratuito de concursos públicos com histórico por órgão, edital, cargo, vacância, validade e último chamado.">
+  <title>Radar de Concursos</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="hero"><div class="container hero-grid"><div><p class="eyebrow">PROJETO OPEN SOURCE</p><h1>Radar de Concursos</h1><p class="subtitle">Escolha o órgão, consulte os três concursos mais recentes ou todos, selecione o edital e depois qualquer cargo ou especialidade cadastrada para ver vagas, validade, vacância, último chamado, nota e fontes.</p></div><div class="hero-status"><span id="updatedAt">Carregando base…</span><span class="status-dot"></span></div></div></header>
+<main class="container">
+<section class="summary"><article class="metric"><span>Órgãos</span><strong id="metricOrgans">0</strong></article><article class="metric"><span>Concursos</span><strong id="metricContests">0</strong></article><article class="metric"><span>Cargos cadastrados</span><strong id="metricPositions">0</strong></article><article class="metric"><span>Concursos oficiais</span><strong id="metricOfficial">0</strong></article></section>
+<section class="notice" id="demoNotice" hidden><strong>Atenção:</strong> registros marcados como demonstração não representam nota, convocação ou vacância oficial.</section>
+
+<section class="panel flow-panel">
+<div class="step"><div class="step-number">1</div><div class="step-body"><p class="eyebrow dark">ÓRGÃO</p><h2>Qual órgão deseja consultar?</h2><div class="organ-picker"><select id="organSelect"><option value="">Selecione um órgão</option></select><input id="organSearch" type="search" placeholder="Pesquisar por nome ou sigla"></div><div id="organInfo" class="selection-info" hidden></div></div></div>
+</section>
+
+<section class="panel" id="contestSection" hidden>
+<div class="step"><div class="step-number">2</div><div class="step-body"><div class="section-title"><div><p class="eyebrow dark">CONCURSOS</p><h2>Selecione um concurso</h2><p class="helper">Por padrão são exibidos os três mais recentes. Use “Ver todos” para consultar todo o histórico cadastrado.</p></div><button id="toggleAllContests" class="button secondary" type="button">Ver todos</button></div><div id="contestList" class="contest-grid"></div></div></div>
+</section>
+
+<section class="panel" id="positionSection" hidden>
+<div class="step"><div class="step-number">3</div><div class="step-body"><p class="eyebrow dark">CARGOS E ESPECIALIDADES DO EDITAL</p><h2 id="positionTitle">Selecione um cargo</h2><p class="helper">O portal não filtra os cargos pelo nome. Ele mostra todas as opções cadastradas para o concurso, preservando a nomenclatura do edital.</p><div id="positionList" class="position-list"></div></div></div>
+</section>
+
+<section class="panel" id="detailSection" hidden>
+<div class="step"><div class="step-number">4</div><div class="step-body"><p class="eyebrow dark">RESULTADO DETALHADO</p><div id="detailContent"></div></div></div>
+</section>
+
+<section class="panel methodology"><p class="eyebrow dark">METODOLOGIA</p><h2>Leitura dos dados</h2><div class="method-grid"><article><h3>Todos os cargos</h3><p>A escolha do que é relevante é feita pelo usuário. O sistema não elimina cargos por palavras-chave, categoria ou especialidade.</p></article><article><h3>Último chamado</h3><p>Maior classificação localizada em ato de convocação ou nomeação, sem misturar cargo, especialidade, localidade ou modalidade de concorrência.</p></article><article><h3>Vacância separada</h3><p>A vacância possui data e fonte próprias. Cargo vago não significa vaga autorizada para concurso.</p></article><article><h3>Código de coleta</h3><p>Quando um dado não é localizado, o portal mostra o código e o motivo: fonte ausente, resultado não encontrado, erro HTTP, documento não interpretado ou revisão manual.</p></article></div></section>
+</main>
+<footer><div class="container">Radar de Concursos • Confirme sempre nas fontes oficiais</div></footer>
+<script src="assets/app.js" defer></script>
+</body></html>

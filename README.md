@@ -1,87 +1,38 @@
-# Radar de Concursos Públicos de TI
+# Radar de Concursos
 
-Portal HTML estático, gratuito e open source para acompanhar concursos exclusivamente da área de Tecnologia da Informação.
+Portal gratuito para organizar concursos por **órgão → concurso → cargo/especialidade**, acompanhar validade, vagas, último chamado, nota, vacância e fontes oficiais. O projeto usa GitHub Pages, GitHub Actions, Python e Google Colab sem servidor permanente.
 
-## Funcionalidades
+## Uso rápido
 
-- filtros por âmbito, estado, carreira, órgão e especialidade;
-- separação entre Nordeste/capitais e concursos federais nacionais;
-- carreiras como Tribunais, Ministérios Públicos, Empresas Públicas de TI, Controle, Educação e Executivo;
-- exibição dos três concursos mais recentes por órgão;
-- vagas imediatas, vacância, validade, total de nomeados e lotação;
-- nota e classificação do último chamado;
-- modalidade de concorrência e nível de confiança;
-- índice de previsibilidade de 0 a 100;
-- fontes oficiais vinculadas em cada registro;
-- publicação gratuita pelo GitHub Pages;
-- nenhuma dependência de banco, servidor ou API paga.
+1. Envie o conteúdo deste projeto para `https://github.com/osmarrcs/radar-concursos-ti`.
+2. Em **Settings → Pages**, selecione **GitHub Actions**.
+3. Abra o notebook pelo botão abaixo para editar e exportar a base.
+
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/osmarrcs/radar-concursos-ti/blob/main/Radar_Concursos_TI_Colab.ipynb)
 
 ## Estrutura
 
-```text
-data/competitions.json        base principal editável
-docs/index.html               página publicada
-docs/assets/                  CSS e JavaScript
-docs/data.json                cópia publicada da base
-src/build_site.py             valida e prepara a publicação
-.github/workflows/pages.yml   publicação automática
-```
+- `data/organs.json`: órgãos e fontes de alerta.
+- `data/contests.json`: dados comuns de cada edital.
+- `data/positions.json`: cargos, especialidades, chamadas e vacância.
+- `web/`: HTML, CSS e JavaScript-fonte.
+- `dist/`: gerado automaticamente; não deve ser editado.
+- `src/radar_concursos/`: pacote Python com regras, validação, build e alertas.
 
-## Como cadastrar dados reais
+O projeto não instala bibliotecas: Colab e Actions adicionam `src/` ao caminho do Python.
+- `tests/`: testes unitários e de integração.
 
-Edite `data/competitions.json`. Cada objeto representa um concurso/cargo/localidade/modalidade. Não misture ampla concorrência, PcD e cotas no mesmo registro.
-
-Campos mais importantes:
-
-- `scope`: `regional`, `regional_federal` ou `national`;
-- `career`: Tribunais, Ministérios Públicos, Empresas Públicas de TI etc.;
-- `last_called_rank` e `last_called_score`;
-- `current_vacancy`;
-- `predictability_score`;
-- `is_official`: use `true` somente após confirmar as fontes;
-- `sources`: links oficiais de edital, resultado e nomeações.
-
-Exemplo de fonte:
-
-```json
-"sources": [
-  {"label": "Edital", "url": "https://..."},
-  {"label": "Resultado final", "url": "https://..."},
-  {"label": "Última nomeação", "url": "https://..."}
-]
-```
-
-## Publicar sem Git instalado
-
-1. Baixe e extraia o ZIP.
-2. Abra o repositório no GitHub.
-3. Clique em **Add file → Upload files**.
-4. Arraste todos os arquivos e pastas extraídos, inclusive `.github`.
-5. Clique em **Commit changes**.
-6. Acesse **Settings → Pages** e selecione **GitHub Actions** em Source.
-7. Abra **Actions → Publicar portal → Run workflow**.
-
-A página ficará em:
-
-```text
-https://xxxxx.github.io/radar-concursos-ti/
-```
-
-
-## Atualização dos dados
-
-Após editar `data/competitions.json`, execute:
+## Comandos
 
 ```bash
-python src/build_site.py
+PYTHONPATH=src python -m unittest discover -s tests -v
+PYTHONPATH=src python -m radar_concursos.build
+PYTHONPATH=src python -m radar_concursos.alerts.monitor --dry-run
 ```
 
-No GitHub, o workflow faz isso automaticamente em cada envio para a branch `main`.
+## Documentação
 
-## Observação sobre a demonstração
-
-Os registros incluídos são fictícios e possuem `is_official: false`. Eles servem para demonstrar filtros e layout. Substitua-os progressivamente por dados oficiais.
-
-## Licença
-
-MIT.
+- [Arquitetura e DFD](documentation/architecture.md)
+- [Google Colab](documentation/colab.md)
+- [Alertas Telegram](documentation/telegram.md)
+- [TDD e testes](documentation/testing.md)

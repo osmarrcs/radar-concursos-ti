@@ -1,0 +1,386 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "description": "Cargos e especialidades vinculados aos concursos."
+  },
+  "positions": [
+    {
+      "id": "demo-dataprev-2012-seg",
+      "contest_id": "dataprev-2012",
+      "position": "Analista de Tecnologia da Informação",
+      "specialty": "Segurança da Informação",
+      "position_code": "",
+      "immediate_vacancies": 2,
+      "last_called_rank": 6,
+      "last_called_score": 71.5,
+      "total_appointed": 6,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada em fonte oficial.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional."
+    },
+    {
+      "id": "demo-dataprev-2016-seg",
+      "contest_id": "dataprev-2016",
+      "position": "Analista de Tecnologia da Informação",
+      "specialty": "Segurança da Informação",
+      "position_code": "",
+      "immediate_vacancies": 3,
+      "last_called_rank": 9,
+      "last_called_score": 74.0,
+      "total_appointed": 9,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada em fonte oficial.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional."
+    },
+    {
+      "id": "demo-dataprev-2024-seg",
+      "contest_id": "dataprev-2024",
+      "position": "Analista de Tecnologia da Informação",
+      "specialty": "Segurança da Informação",
+      "position_code": "",
+      "immediate_vacancies": 5,
+      "last_called_rank": 12,
+      "last_called_score": 76.5,
+      "total_appointed": 12,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada em fonte oficial.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional."
+    },
+    {
+      "id": "ifpe-2016-demo-ti",
+      "contest_id": "ifpe-tae-2016",
+      "position": "Técnico de Tecnologia da Informação",
+      "specialty": "Tecnologia da Informação",
+      "position_code": "",
+      "immediate_vacancies": null,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Registro demonstrativo até a inclusão de fontes oficiais do certame."
+    },
+    {
+      "id": "ifpe-2019-ti-3",
+      "contest_id": "ifpe-tae-2019",
+      "position": "Técnico de Laboratório",
+      "specialty": "Manutenção e Suporte em Informática",
+      "position_code": "",
+      "immediate_vacancies": null,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "O cargo consta na notícia oficial; quantitativos e histórico de chamadas ainda precisam ser importados do edital e dos atos."
+    },
+    {
+      "id": "ifpe-2019-ti-4",
+      "contest_id": "ifpe-tae-2019",
+      "position": "Técnico de Laboratório",
+      "specialty": "Rede de Computadores",
+      "position_code": "",
+      "immediate_vacancies": null,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "O cargo consta na notícia oficial; quantitativos e histórico de chamadas ainda precisam ser importados do edital e dos atos."
+    },
+    {
+      "id": "ifpe-2019-ti-1",
+      "contest_id": "ifpe-tae-2019",
+      "position": "Técnico em Tecnologia da Informação",
+      "specialty": "Desenvolvimento",
+      "position_code": "",
+      "immediate_vacancies": null,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "O cargo consta na notícia oficial; quantitativos e histórico de chamadas ainda precisam ser importados do edital e dos atos."
+    },
+    {
+      "id": "ifpe-2019-ti-2",
+      "contest_id": "ifpe-tae-2019",
+      "position": "Técnico em Tecnologia da Informação",
+      "specialty": "Rede e Suporte",
+      "position_code": "",
+      "immediate_vacancies": null,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância não apurada.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Sem fonte específica de vacância.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "O cargo consta na notícia oficial; quantitativos e histórico de chamadas ainda precisam ser importados do edital e dos atos."
+    },
+    {
+      "id": "ifpe-2025-302",
+      "contest_id": "ifpe-tae-2025",
+      "position": "Analista de Tecnologia da Informação — Área Desenvolvimento",
+      "specialty": "Desenvolvimento de Sistemas",
+      "position_code": "302",
+      "immediate_vacancies": 2,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "A quantidade de cargos vagos deve ser apurada separadamente em quadro de referência, transparência ou resposta oficial do IFPE.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte específica de vacância foi cadastrada para este cargo.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+    },
+    {
+      "id": "ifpe-2025-303",
+      "contest_id": "ifpe-tae-2025",
+      "position": "Analista de Tecnologia da Informação — Área Infraestrutura e Segurança",
+      "specialty": "Infraestrutura e Segurança da Informação",
+      "position_code": "303",
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "A quantidade de cargos vagos deve ser apurada separadamente em quadro de referência, transparência ou resposta oficial do IFPE.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte específica de vacância foi cadastrada para este cargo.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+    },
+    {
+      "id": "ifpe-2025-208",
+      "contest_id": "ifpe-tae-2025",
+      "position": "Técnico de Laboratório — Área Manutenção e Suporte em Informática",
+      "specialty": "Manutenção e Suporte em Informática",
+      "position_code": "208",
+      "immediate_vacancies": 2,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "A quantidade de cargos vagos deve ser apurada separadamente em quadro de referência, transparência ou resposta oficial do IFPE.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte específica de vacância foi cadastrada para este cargo.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+    },
+    {
+      "id": "ifpe-2025-211",
+      "contest_id": "ifpe-tae-2025",
+      "position": "Técnico de Laboratório — Área Redes de Computadores",
+      "specialty": "Redes de Computadores",
+      "position_code": "211",
+      "immediate_vacancies": 2,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "A quantidade de cargos vagos deve ser apurada separadamente em quadro de referência, transparência ou resposta oficial do IFPE.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte específica de vacância foi cadastrada para este cargo.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+    },
+    {
+      "id": "ifpe-2025-213",
+      "contest_id": "ifpe-tae-2025",
+      "position": "Técnico de Laboratório — Área Tecnologia da Informação",
+      "specialty": "Tecnologia da Informação",
+      "position_code": "213",
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "A quantidade de cargos vagos deve ser apurada separadamente em quadro de referência, transparência ou resposta oficial do IFPE.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte específica de vacância foi cadastrada para este cargo.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+    },
+    {
+      "id": "ifpe-2025-214",
+      "contest_id": "ifpe-tae-2025",
+      "position": "Técnico de Tecnologia da Informação",
+      "specialty": "Tecnologia da Informação",
+      "position_code": "214",
+      "immediate_vacancies": 8,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Ampla concorrência",
+      "sources": [],
+      "collection_status": {},
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "A quantidade de cargos vagos deve ser apurada separadamente em quadro de referência, transparência ou resposta oficial do IFPE.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte específica de vacância foi cadastrada para este cargo.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+    }
+  ]
+}
