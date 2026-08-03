@@ -57,6 +57,7 @@ def validate_dataset(dataset: Mapping[str, Mapping]) -> list[str]:
     positions = dataset.get("positions", {}).get("positions")
     alerts = dataset.get("alerts", {})
     updates = dataset.get("updates", {}).get("updates", [])
+    discoveries = dataset.get("discoveries", {}).get("discoveries", [])
     if not isinstance(organs, list): errors.append("organs.json: organs precisa ser lista"); organs=[]
     if not isinstance(contests, list): errors.append("contests.json: contests precisa ser lista"); contests=[]
     if not isinstance(positions, list): errors.append("positions.json: positions precisa ser lista"); positions=[]
@@ -89,6 +90,8 @@ def validate_dataset(dataset: Mapping[str, Mapping]) -> list[str]:
         _date(contest.get("verified_at"),f"{p}.verified_at",errors)
         _date(contest.get("publication_date"),f"{p}.publication_date",errors)
         _date(contest.get("edital_date"),f"{p}.edital_date",errors)
+        _date(contest.get("application_start"),f"{p}.application_start",errors)
+        _date(contest.get("application_end"),f"{p}.application_end",errors)
         years=contest.get("validity_years")
         if years is not None and (not isinstance(years,int) or isinstance(years,bool) or years<=0): errors.append(f"{p}.validity_years: inteiro > 0 ou null")
         _sources(contest.get("sources"),f"{p}.sources",errors,allow_relative=True)
@@ -155,6 +158,28 @@ def validate_dataset(dataset: Mapping[str, Mapping]) -> list[str]:
         if not isinstance(update.get("official"),bool): errors.append(f"{p}.official: booleano obrigatório")
         if not isinstance(update.get("auto_applied"),bool): errors.append(f"{p}.auto_applied: booleano obrigatório")
 
+
+    if not isinstance(discoveries, list):
+        errors.append("discovered_contests.json: discoveries precisa ser lista")
+        discoveries=[]
+    discovery_ids=set()
+    for i, discovery in enumerate(discoveries,1):
+        p=f"Descoberta {i}"
+        if not isinstance(discovery,Mapping):
+            errors.append(f"{p}: objeto esperado")
+            continue
+        for field in ("id","organ_id","title","status","event_type"):
+            if not _text(discovery.get(field)): errors.append(f"{p}.{field}: obrigatório")
+        did=str(discovery.get("id","")).strip()
+        if did in discovery_ids: errors.append(f"{p}.id: duplicado {did}")
+        discovery_ids.add(did)
+        if discovery.get("organ_id") not in organ_ids: errors.append(f"{p}.organ_id: órgão inexistente")
+        year=discovery.get("year")
+        if year is not None and (not isinstance(year,int) or isinstance(year,bool) or not 2000<=year<=2100): errors.append(f"{p}.year: inválido")
+        if not isinstance(discovery.get("official"),bool): errors.append(f"{p}.official: booleano obrigatório")
+        if not isinstance(discovery.get("structured"),bool): errors.append(f"{p}.structured: booleano obrigatório")
+        _sources(discovery.get("sources"),f"{p}.sources",errors)
+
     monitored=alerts.get("monitored_organs",[])
     if not isinstance(monitored,list): errors.append("alert_config.monitored_organs: lista obrigatória")
     else:
@@ -166,4 +191,6 @@ def validate_dataset(dataset: Mapping[str, Mapping]) -> list[str]:
     if not isinstance(search_days,int) or isinstance(search_days,bool) or not 1<=search_days<=3650:
         errors.append("alert_config.search_days: inteiro entre 1 e 3650")
     if not isinstance(alerts.get("daily_metrics",True),bool): errors.append("alert_config.daily_metrics: booleano obrigatório")
+    if not isinstance(alerts.get("notify_errors",True),bool): errors.append("alert_config.notify_errors: booleano obrigatório")
+    if not isinstance(alerts.get("notify_open_edicts",True),bool): errors.append("alert_config.notify_open_edicts: booleano obrigatório")
     return errors

@@ -3,35 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Radar gratuito de concursos públicos com histórico por órgão, edital, cargo, vacância, validade e último chamado.">
+  <meta name="description" content="Radar de concursos por carreira, órgão, edital e cargo.">
   <title>Radar de Concursos</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-<header class="hero"><div class="container hero-grid"><div><p class="eyebrow">PROJETO OPEN SOURCE</p><h1>Radar de Concursos</h1><p class="subtitle">Escolha o órgão, consulte concursos e cargos e acompanhe as últimas publicações encontradas automaticamente em fontes oficiais, GDELT e diários municipais configurados.</p></div><div class="hero-status"><span id="updatedAt">Carregando base…</span><span class="status-dot"></span></div></div></header>
+<header class="hero"><div class="container hero-grid"><div><p class="eyebrow">PROJETO OPEN SOURCE</p><h1>Radar de Concursos</h1><p class="subtitle">Navegue por âmbito, carreira e órgão; consulte os últimos concursos e compare cargos de editais abertos.</p></div><div class="hero-status"><span id="updatedAt">Carregando…</span><span class="status-dot"></span></div></div></header>
 <main class="container">
-<section class="summary"><article class="metric"><span>Órgãos</span><strong id="metricOrgans">0</strong></article><article class="metric"><span>Concursos</span><strong id="metricContests">0</strong></article><article class="metric"><span>Cargos cadastrados</span><strong id="metricPositions">0</strong></article><article class="metric"><span>Concursos oficiais</span><strong id="metricOfficial">0</strong></article><article class="metric"><span>Atualizações</span><strong id="metricUpdates">0</strong></article></section>
-<section class="notice" id="demoNotice" hidden><strong>Atenção:</strong> registros marcados como demonstração não representam nota, convocação ou vacância oficial.</section>
+<section class="summary"><article class="metric"><span>Órgãos</span><strong id="metricOrgans">0</strong></article><article class="metric"><span>Concursos</span><strong id="metricContests">0</strong></article><article class="metric"><span>Cargos</span><strong id="metricPositions">0</strong></article><article class="metric"><span>Editais abertos</span><strong id="metricOpen">0</strong></article><article class="metric"><span>Atualizações</span><strong id="metricUpdates">0</strong></article><article class="metric"><span>Descobertas automáticas</span><strong id="metricDiscoveries">0</strong></article></section>
+<nav class="tabs panel"><button class="tab active" data-tab="history">Histórico por órgão</button><button class="tab" data-tab="open">Editais em aberto</button><button class="tab" data-tab="search">Busca geral</button></nav>
 
-<section class="panel flow-panel">
-<div class="step"><div class="step-number">1</div><div class="step-body"><p class="eyebrow dark">ÓRGÃO</p><h2>Qual órgão deseja consultar?</h2><div class="organ-picker"><select id="organSelect"><option value="">Selecione um órgão</option></select><input id="organSearch" type="search" placeholder="Pesquisar por nome ou sigla"></div><div id="organInfo" class="selection-info" hidden></div></div></div>
+<section id="tab-history" class="tab-panel">
+  <section class="panel"><p class="eyebrow dark">ETAPA 1</p><h2>Âmbito, carreira e órgão</h2><div class="filter-grid"><select id="hScope"><option value="national">Nacional</option><option value="states">Estados</option></select><select id="hState"><option value="">Estado</option></select><select id="hCareer"><option value="">Carreira</option></select><select id="hOrgan"><option value="">Órgão</option></select></div><div id="hOrganInfo" class="selection-info" hidden></div></section>
+  <section id="hDiscoverySection" class="panel" hidden><div class="section-title"><div><p class="eyebrow dark">AUTOMAÇÃO</p><h2>Encontrados automaticamente</h2><p class="helper">Publicações localizadas pelo GitHub Actions. Ainda não substituem um concurso estruturado com cargos.</p></div></div><div id="hDiscoveries" class="contest-grid"></div></section>
+  <section id="hContestSection" class="panel" hidden><div class="section-title"><div><p class="eyebrow dark">ETAPA 2</p><h2>Últimos concursos</h2><p class="helper">Por padrão são exibidos os três mais recentes.</p></div><button id="hToggleAll" class="button secondary">Ver todos</button></div><div id="hContests" class="contest-grid"></div></section>
+  <section id="hPositionSection" class="panel" hidden><p class="eyebrow dark">ETAPA 3</p><h2>Todos os cargos do edital</h2><div id="hPositions" class="position-list"></div></section>
+  <section id="hDetailSection" class="panel" hidden><p class="eyebrow dark">DETALHES</p><div id="hDetail"></div></section>
 </section>
 
-<section class="panel" id="updateSection" hidden><p class="eyebrow dark">ÚLTIMAS INFORMAÇÕES LOCALIZADAS</p><h2>Atualizações do órgão</h2><div id="organUpdates" class="updates-list"></div></section>
-
-<section class="panel" id="contestSection" hidden>
-<div class="step"><div class="step-number">2</div><div class="step-body"><div class="section-title"><div><p class="eyebrow dark">CONCURSOS</p><h2>Selecione um concurso</h2><p class="helper">Por padrão são exibidos os três mais recentes. Use “Ver todos” para consultar todo o histórico cadastrado.</p></div><button id="toggleAllContests" class="button secondary" type="button">Ver todos</button></div><div id="contestList" class="contest-grid"></div></div></div>
+<section id="tab-open" class="tab-panel" hidden>
+  <section class="panel"><p class="eyebrow dark">EDITAIS EM ABERTO</p><h2>Escolha um edital e até dois cargos</h2><div class="filter-grid"><select id="oScope"><option value="national">Nacional</option><option value="states" selected>Estados</option></select><select id="oState"><option value="">Estado</option></select><select id="oCareer"><option value="">Todas as carreiras</option></select><select id="oOrgan"><option value="">Todos os órgãos</option></select></div><select id="oContest" class="wide"><option value="">Selecione um edital</option></select><p class="helper">Selecione até dois cargos/especialidades para comparar vacância, último convocado e nota.</p><div id="oPositions" class="position-list"></div><div id="oCompare" class="compare-grid"></div></section>
 </section>
 
-<section class="panel" id="positionSection" hidden>
-<div class="step"><div class="step-number">3</div><div class="step-body"><p class="eyebrow dark">CARGOS E ESPECIALIDADES DO EDITAL</p><h2 id="positionTitle">Selecione um cargo</h2><p class="helper">O portal não filtra os cargos pelo nome. Ele mostra todas as opções cadastradas para o concurso, preservando a nomenclatura do edital.</p><div id="positionList" class="position-list"></div></div></div>
+<section id="tab-search" class="tab-panel" hidden>
+  <section class="panel"><p class="eyebrow dark">BUSCA GERAL NA BASE</p><h2>Pesquise sem escolher órgão</h2><div class="search-row"><input id="searchInput" type="search" placeholder="Ex.: UFPE redes, técnico judiciário, 2026, segurança"><button id="searchButton" class="button primary">Pesquisar</button></div><div id="searchResults" class="search-results"></div></section>
 </section>
 
-<section class="panel" id="detailSection" hidden>
-<div class="step"><div class="step-number">4</div><div class="step-body"><p class="eyebrow dark">RESULTADO DETALHADO</p><div id="detailContent"></div></div></div>
-</section>
-
-<section class="panel methodology"><p class="eyebrow dark">METODOLOGIA</p><h2>Leitura dos dados</h2><div class="method-grid"><article><h3>Todos os cargos</h3><p>A escolha do que é relevante é feita pelo usuário. O sistema não elimina cargos por palavras-chave, categoria ou especialidade.</p></article><article><h3>Último chamado</h3><p>Maior classificação localizada em ato de convocação ou nomeação, sem misturar cargo, especialidade, localidade ou modalidade de concorrência.</p></article><article><h3>Vacância separada</h3><p>A vacância possui data e fonte próprias. Cargo vago não significa vaga autorizada para concurso.</p></article><article><h3>Código de coleta</h3><p>Quando um dado não é localizado, o portal mostra o código e o motivo: fonte ausente, resultado não encontrado, erro HTTP, documento não interpretado ou revisão manual.</p></article></div></section>
+<section class="panel methodology"><p class="eyebrow dark">METODOLOGIA</p><h2>Como interpretar</h2><div class="method-grid"><article><h3>Todos os cargos</h3><p>O sistema não limita por palavras-chave. A escolha é feita pelo usuário dentro de cada edital.</p></article><article><h3>Vacância</h3><p>É separada das vagas do edital e precisa de data e fonte específica.</p></article><article><h3>Último convocado</h3><p>Nome, classificação e nota só são exibidos quando vinculados ao cargo, especialidade, localidade e modalidade corretos.</p></article></div></section>
 </main>
 <footer><div class="container">Radar de Concursos • Confirme sempre nas fontes oficiais</div></footer>
 <script src="assets/app.js" defer></script>

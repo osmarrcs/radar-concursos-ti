@@ -113,6 +113,8 @@ def run(
             report["details"].append({"organ_id":oid,"code":StatusCode.BASELINE_CREATED.value,"found":len(current),"errors":search_report.errors,"metrics":m})
             continue
         new=[item for url,item in current.items() if url not in known]
+        if not config.get("notify_open_edicts", True):
+            new=[item for item in new if item.get("event_type") != "edital"]
         report["metrics"]["new_items"]+=len(new)
         sent=False
         if new:
@@ -143,6 +145,8 @@ def run(
     report["metrics"]["duration_ms"]=round((time.perf_counter()-started)*1000)
     if report["metrics"]["new_items"]==0:
         report.update(code=StatusCode.NO_NEW_ITEMS.value,reason="Nenhuma publicação nova encontrada.")
+    if config.get("notify_errors", True) and report["metrics"].get("errors", 0) and not send_metrics:
+        send_metrics = True
     if send_metrics and not dry_run:
         if token and chat_id:
             result=send_message(token,chat_id,format_metrics_message(report["metrics"],report["details"]))

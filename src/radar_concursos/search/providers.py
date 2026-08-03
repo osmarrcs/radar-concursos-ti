@@ -35,9 +35,23 @@ def _error(metrics: ProviderMetrics, source: str, exc: Exception) -> None:
     metrics.errors.append({"source": source, "code": code, "reason": str(exc)})
 
 
+
+def expand_keywords(keywords: list[str]) -> list[str]:
+    """Expand free-text phrases into usable search terms without requiring an exact sentence."""
+    result: list[str] = []
+    for raw in keywords:
+        value = str(raw or "").strip()
+        if not value:
+            continue
+        result.append(value)
+        for token in normalize_text(value).split():
+            if len(token) >= 4:
+                result.append(token)
+    return list(dict.fromkeys(result))
+
 def _relevant(title: str, url: str, keywords: list[str], organ: dict) -> bool:
     text = normalize_text(f"{title} {url}")
-    has_keyword = any(normalize_text(word) in text for word in keywords)
+    has_keyword = any(normalize_text(word) in text for word in expand_keywords(keywords))
     return has_keyword and (mentions_organ(text, organ) or is_official_url(url, organ))
 
 
@@ -83,7 +97,7 @@ class GdeltProvider:
         started = time.perf_counter()
         metrics = ProviderMetrics(provider=self.name, attempted=1)
         terms = [f'"{organ.get("acronym", "")}"', f'"{organ.get("name", "")}"']
-        key_terms = [word for word in keywords if len(word) >= 5][:10]
+        key_terms = [word for word in expand_keywords(keywords) if len(word) >= 5][:12]
         region = organ.get("city") or STATE_NAMES.get(str(organ.get("state", "")).upper(), "")
         region_clause = f' "{region}"' if region and str(organ.get("scope")) != "national" else ""
         query = f"({' OR '.join(terms)}) ({' OR '.join(key_terms)}){region_clause}"
@@ -167,7 +181,7 @@ class QueridoDiarioProvider:
                 summary = " ".join(str(x) for x in excerpts)
                 title = f"Diário oficial de {gazette.get('territory_name') or organ.get('city') or organ.get('acronym')} — {gazette.get('date', '')}"
                 item_url = str(gazette.get("url") or gazette.get("file_raw") or gazette.get("file_url") or "").strip()
-                if not item_url or not any(normalize_text(word) in normalize_text(summary) for word in keywords):
+                if not item_url or not any(normalize_text(word) in normalize_text(summary) for word in expand_keywords(keywords)):
                     continue
                 metrics.relevant_items += 1
                 metrics.official_items += 1

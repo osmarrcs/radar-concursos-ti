@@ -27,7 +27,9 @@ def slugify(value: str) -> str:
 def infer_organ(name: str, acronym: str) -> dict[str, str]:
     text=f"{name} {acronym}".upper()
     result={"career":"Outros órgãos","sphere":"Estadual","scope":"regional","state":"","city":""}
-    if any(k in text for k in ("INSTITUTO FEDERAL","UNIVERSIDADE FEDERAL")):
+    if any(k in text for k in ("POLÍCIA FEDERAL", "POLICIA FEDERAL", "POLÍCIA RODOVIÁRIA FEDERAL", "POLICIA RODOVIARIA FEDERAL", "ABIN", "AGÊNCIA BRASILEIRA DE INTELIGÊNCIA", "AGENCIA BRASILEIRA DE INTELIGENCIA")):
+        result.update(career="Carreiras Policiais e Inteligência",sphere="Federal",scope="national",state="BR",city="Nacional")
+    elif any(k in text for k in ("INSTITUTO FEDERAL","UNIVERSIDADE FEDERAL")):
         result.update(career="Universidades e Institutos Federais",sphere="Federal",scope="regional_federal")
     elif any(k in text for k in ("TRF","TRT","TRE","TRIBUNAL REGIONAL")):
         result.update(career="Tribunais",sphere="Federal",scope="regional_federal")
@@ -85,6 +87,7 @@ def save_contest(record: dict[str,Any], *, data_dir: Path=DATA_DIR) -> dict[str,
         "status":str(record["status"]).strip(),"valid_until":record.get("valid_until","") or "",
         "validity_years":record.get("validity_years"),"validity_rule":record.get("validity_rule","") or "",
         "publication_date":record.get("publication_date","") or "","edital_date":record.get("edital_date","") or "",
+        "application_start":record.get("application_start","") or "","application_end":record.get("application_end","") or "",
         "edital_number":str(record.get("edital_number","") or "").strip(),
         "exam_location":str(record.get("exam_location","") or "").strip(),
         "reserve_list":record.get("reserve_list"),"lotation":record.get("lotation","") or "",
@@ -109,8 +112,8 @@ def save_position(record: dict[str,Any], *, data_dir: Path=DATA_DIR) -> dict[str
         "specialty":str(record.get("specialty","") or "").strip(),"position_code":str(record.get("position_code","") or "").strip(),
         "workload_hours":record.get("workload_hours"),"level":str(record.get("level","") or "").strip(),
         "lotation":str(record.get("lotation","") or "").strip(),"vacancy_breakdown":record.get("vacancy_breakdown",{}),
-        "immediate_vacancies":record.get("immediate_vacancies"),"last_called_rank":record.get("last_called_rank"),
-        "last_called_score":record.get("last_called_score"),"total_appointed":record.get("total_appointed"),
+        "immediate_vacancies":record.get("immediate_vacancies"),"last_called_name":str(record.get("last_called_name","") or "").strip(),
+        "last_called_rank":record.get("last_called_rank"),"last_called_score":record.get("last_called_score"),"total_appointed":record.get("total_appointed"),
         "quota_type":str(record.get("quota_type","") or "").strip(),"sources":record.get("sources",[]),
         "collection_status":record.get("collection_status",{}),"vacancy":copy_vacancy(record.get("vacancy") or (existing or {}).get("vacancy")),
         "notes":str(record.get("notes","") or "").strip(),
@@ -178,6 +181,7 @@ def update_call_history(position_id: str, history: dict[str, Any], *, data_dir: 
     score=history.get("last_called_score")
     if score is not None and (not isinstance(score,(int,float)) or isinstance(score,bool) or score<0):
         raise ValueError("last_called_score deve ser número maior ou igual a zero.")
+    position["last_called_name"]=str(history.get("last_called_name") or "").strip()
     position["last_called_rank"]=history.get("last_called_rank")
     position["last_called_score"]=history.get("last_called_score")
     position["total_appointed"]=history.get("total_appointed")
@@ -295,6 +299,8 @@ def update_alert_preferences(
     providers: dict[str,bool] | None=None,
     search_days: int | None=None,
     daily_metrics: bool | None=None,
+    notify_errors: bool | None=None,
+    notify_open_edicts: bool | None=None,
     data_dir: Path=DATA_DIR,
 ) -> dict[str, Any]:
     dataset=load_dataset(data_dir)
@@ -322,6 +328,10 @@ def update_alert_preferences(
         config["search_days"]=int(search_days)
     if daily_metrics is not None:
         config["daily_metrics"]=bool(daily_metrics)
+    if notify_errors is not None:
+        config["notify_errors"]=bool(notify_errors)
+    if notify_open_edicts is not None:
+        config["notify_open_edicts"]=bool(notify_open_edicts)
     config.setdefault("metadata",{})["updated_at"]=date.today().isoformat()
     _save_dataset(dataset,data_dir)
     return config

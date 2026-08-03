@@ -20,6 +20,7 @@ def prepare_payload(dataset: dict[str,dict[str,Any]], updated_at: str|None=None)
         "contests":dataset["contests"]["contests"],
         "positions":dataset["positions"]["positions"],
         "updates":dataset["updates"]["updates"],
+        "discoveries":dataset.get("discoveries", {"discoveries": []}).get("discoveries", []),
     }
 
 def build(web_dir: Path=WEB_DIR, dist_dir: Path=DIST_DIR, updated_at: str|None=None) -> dict[str,Any]:
@@ -35,6 +36,6 @@ def build(web_dir: Path=WEB_DIR, dist_dir: Path=DIST_DIR, updated_at: str|None=N
 def main() -> None:
     try: payload=build()
     except (OSError,ValueError) as exc: raise SystemExit(str(exc)) from exc
-    print(f"Portal gerado: {len(payload['organs'])} órgãos, {len(payload['contests'])} concursos, {len(payload['positions'])} cargos e {len(payload['updates'])} atualizações.")
+    print(f"Portal gerado: {len(payload['organs'])} órgãos, {len(payload['contests'])} concursos, {len(payload['positions'])} cargos, {len(payload['updates'])} atualizações e {len(payload['discoveries'])} descobertas automáticas.")
 
 if __name__=="__main__": main()

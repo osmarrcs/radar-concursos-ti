@@ -49,4 +49,5 @@ def load_dataset(data_dir: Path = DATA_DIR) -> dict[str, dict[str, Any]]:
         "positions": load_json(data_dir / "positions.json"),
         "alerts": load_json(data_dir / "alert_config.json"),
         "updates": load_json(updates_path),
+        "discoveries": load_json(data_dir / "discovered_contests.json") if (data_dir / "discovered_contests.json").exists() else {"metadata": {"schema_version": "1.0"}, "discoveries": []},
     }
