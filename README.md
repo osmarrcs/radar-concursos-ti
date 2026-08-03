@@ -1,38 +1,67 @@
 # Radar de Concursos
 
-Portal gratuito para organizar concursos por **órgão → concurso → cargo/especialidade**, acompanhar validade, vagas, último chamado, nota, vacância e fontes oficiais. O projeto usa GitHub Pages, GitHub Actions, Python e Google Colab sem servidor permanente.
+Portal estático e painel administrativo no Google Colab para acompanhar concursos por órgão, edital e cargo.
 
-## Uso rápido
+## Fluxo do Colab
 
-1. Envie o conteúdo deste projeto para `https://github.com/osmarrcs/radar-concursos-ti`.
-2. Em **Settings → Pages**, selecione **GitHub Actions**.
-3. Abra o notebook pelo botão abaixo para editar e exportar a base.
+O notebook possui **uma única célula executável**. Ela baixa/atualiza o repositório e abre um painel com cinco opções independentes:
 
-[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/osmarrcs/radar-concursos-ti/blob/main/Radar_Concursos_TI_Colab.ipynb)
+1. **Concurso na base** — órgão → três concursos mais recentes ou todos → cargo → detalhes.
+2. **Buscar por órgão** — estado + sigla/nome; consulta fontes oficiais cadastradas, GDELT e Querido Diário quando aplicável.
+3. **Adicionar por PDF** — anexa ou baixa um edital, reconhece todos os cargos e permite escolher quais importar.
+4. **Alertas e métricas** — escolhe órgãos, provedores, período e palavras-chave.
+5. **Gerar e exportar** — testa, gera, visualiza e baixa o ZIP.
 
-## Estrutura
+Abrir no Colab:
 
-- `data/organs.json`: órgãos e fontes de alerta.
-- `data/contests.json`: dados comuns de cada edital.
-- `data/positions.json`: cargos, especialidades, chamadas e vacância.
-- `web/`: HTML, CSS e JavaScript-fonte.
-- `dist/`: gerado automaticamente; não deve ser editado.
-- `src/radar_concursos/`: pacote Python com regras, validação, build e alertas.
+`https://colab.research.google.com/github/osmarrcs/radar-concursos-ti/blob/main/Radar_Concursos_TI_Colab.ipynb`
 
-O projeto não instala bibliotecas: Colab e Actions adicionam `src/` ao caminho do Python.
-- `tests/`: testes unitários e de integração.
+## Busca automática
 
-## Comandos
+A busca usa provedores independentes:
+
+- páginas HTML/RSS oficiais cadastradas no órgão;
+- GDELT DOC 2.0 para descoberta de notícias;
+- Querido Diário para órgãos municipais que possuam `territory_id` (código IBGE);
+- PDF anexado ou localizado por URL.
+
+Os resultados são classificados como edital, retificação, inscrição, resultado, homologação, convocação, nomeação, prorrogação, banca, comissão, autorização, vacância ou notícia.
+
+Resultados oficiais podem atualizar automaticamente o status do concurso correspondente, preservando o link como evidência. A atualização aparece em `data/updates.json` e no portal.
+
+## Alertas
+
+O GitHub Actions faz uma varredura a cada seis horas e um resumo diário às 08:30 no fuso `America/Recife`.
+
+Métricas enviadas:
+
+- órgãos consultados;
+- provedores executados e com sucesso;
+- itens analisados;
+- itens relevantes e oficiais;
+- novidades;
+- erros;
+- duração.
+
+Secrets necessários:
+
+- `TELEGRAM_BOT_TOKEN`
+- `TELEGRAM_CHAT_ID`
+
+## Dados
+
+- `data/organs.json`: órgãos, domínios e fontes oficiais.
+- `data/contests.json`: concursos.
+- `data/positions.json`: cargos/especialidades.
+- `data/updates.json`: atualizações descobertas.
+- `data/alert_config.json`: seleção e regras dos alertas.
+- `data/alert_state.json`: URLs já conhecidas.
+
+## Testes e build
 
 ```bash
 PYTHONPATH=src python -m unittest discover -s tests -v
 PYTHONPATH=src python -m radar_concursos.build
-PYTHONPATH=src python -m radar_concursos.alerts.monitor --dry-run
 ```
 
-## Documentação
-
-- [Arquitetura e DFD](documentation/architecture.md)
-- [Google Colab](documentation/colab.md)
-- [Alertas Telegram](documentation/telegram.md)
-- [TDD e testes](documentation/testing.md)
+O portal é gerado em `dist/` e publicado automaticamente no GitHub Pages.

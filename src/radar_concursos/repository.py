@@ -37,9 +37,16 @@ def atomic_write_json(path: Path, payload: dict[str, Any]) -> None:
         raise
 
 def load_dataset(data_dir: Path = DATA_DIR) -> dict[str, dict[str, Any]]:
+    updates_path = data_dir / "updates.json"
+    if not updates_path.exists():
+        atomic_write_json(updates_path, {
+            "metadata": {"schema_version": "3.0", "description": "Atualizações descobertas automaticamente ou salvas pelo usuário."},
+            "updates": [],
+        })
     return {
         "organs": load_json(data_dir / "organs.json"),
         "contests": load_json(data_dir / "contests.json"),
         "positions": load_json(data_dir / "positions.json"),
         "alerts": load_json(data_dir / "alert_config.json"),
+        "updates": load_json(updates_path),
     }

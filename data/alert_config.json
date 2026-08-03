@@ -1,7 +1,7 @@
 {
   "metadata": {
     "updated_at": "2026-07-31",
-    "schema_version": "2.0",
+    "schema_version": "3.0",
     "description": "Órgãos selecionados pelo usuário para monitoramento de notícias e publicações oficiais."
   },
   "enabled": true,
@@ -26,5 +26,13 @@
     "vagas"
   ],
   "max_items_per_message": 8,
-  "first_run_behavior": "baseline"
+  "first_run_behavior": "baseline",
+  "providers": {
+    "fontes_oficiais": true,
+    "gdelt": true,
+    "querido_diario": true
+  },
+  "search_days": 90,
+  "daily_metrics": true,
+  "max_results_per_provider": 50
 }

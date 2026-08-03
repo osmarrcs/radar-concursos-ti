@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "schema_version": "2.0",
+    "schema_version": "3.0",
     "description": "Catálogo de órgãos monitorados."
   },
   "organs": [
@@ -19,7 +19,12 @@
           "url": "https://portal.ifpe.edu.br/tag/concurso/",
           "type": "html"
         }
-      ]
+      ],
+      "official_domains": [
+        "ifpe.edu.br",
+        "portal.ifpe.edu.br"
+      ],
+      "territory_id": ""
     },
     {
       "id": "dataprev",
@@ -36,7 +41,11 @@
           "url": "https://www.dataprev.gov.br/conheca-dataprev-faca-parte-da-dataprev/concursos",
           "type": "html"
         }
-      ]
+      ],
+      "official_domains": [
+        "dataprev.gov.br"
+      ],
+      "territory_id": ""
     },
     {
       "id": "tjpe",
@@ -47,7 +56,34 @@
       "scope": "regional",
       "state": "PE",
       "city": "Recife",
-      "alert_sources": []
+      "alert_sources": [],
+      "official_domains": [
+        "tjpe.jus.br"
+      ],
+      "territory_id": ""
+    },
+    {
+      "id": "ufpe",
+      "name": "Universidade Federal de Pernambuco",
+      "acronym": "UFPE",
+      "career": "Universidades e Institutos Federais",
+      "sphere": "Federal",
+      "scope": "regional_federal",
+      "state": "PE",
+      "city": "Pernambuco",
+      "alert_sources": [
+        {
+          "label": "UFPE/FADE — concurso TAE 2026",
+          "url": "https://www.fadeconcursos.org.br/concursoufpe2026",
+          "type": "html"
+        }
+      ],
+      "official_domains": [
+        "ufpe.br",
+        "fadeconcursos.org.br",
+        "in.gov.br"
+      ],
+      "territory_id": ""
     }
   ]
 }

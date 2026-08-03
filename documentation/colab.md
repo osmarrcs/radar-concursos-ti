@@ -1,23 +1,34 @@
-# Google Colab
+# Google Colab — painel único
 
-O notebook da raiz é uma interface fina: ele chama funções do pacote Python, em vez de duplicar regras.
+Não crie outro notebook e não execute células em sequência.
 
-## Abrir
+1. Suba o projeto no GitHub.
+2. Abra `Radar_Concursos_TI_Colab.ipynb` pelo botão **Open in Colab** ou pelo endereço do README.
+3. Execute a única célula.
+4. Use o menu exibido.
 
-`https://colab.research.google.com/github/osmarrcs/radar-concursos-ti/blob/main/Radar_Concursos_TI_Colab.ipynb`
+A célula executa `git pull` quando o projeto já existe na sessão ou `git clone` quando é a primeira abertura. Em seguida chama `radar_concursos.colab_app.launch()`.
 
-## Fluxo
+## Opções
 
-1. Clonar o repositório e adicionar `src/` ao caminho do Python. Nenhuma biblioteca é instalada.
-2. Cadastrar ou atualizar órgão.
-3. Cadastrar concurso uma vez.
-4. Cadastrar todos os cargos do edital.
-5. Atualizar vacância separadamente.
-6. Selecionar órgãos para alertas.
-7. Rodar testes e gerar `dist/`.
-8. Visualizar o portal.
-9. Exportar ZIP limpo, sem `.git`, caches ou `dist/` antigo.
+### Concurso na base
 
-## Publicar sem Git local
+Consulta sem alterar dados. Mostra as atualizações automáticas mais recentes do órgão.
 
-Extraia o ZIP exportado e use **Add file → Upload files** no GitHub. Envie o conteúdo extraído, não o ZIP fechado.
+### Buscar por órgão
+
+Informe estado e sigla/nome. Um órgão já existente usa nome, sigla, fontes e domínios cadastrados. Um nome ainda inexistente é usado temporariamente e só é salvo quando você decide persistir os resultados ou importar um PDF.
+
+A busca mostra métricas, erros por provedor e resultados selecionáveis. PDFs localizados podem ser encaminhados diretamente para o importador.
+
+### Adicionar por PDF
+
+Aceita upload ou URL. Mostra todos os cargos reconhecidos, sem filtro por TI. Vagas são extraídas do edital; vacância e histórico de chamadas continuam separados.
+
+### Alertas e métricas
+
+Seleciona órgãos, provedores, período e palavras-chave. O botão de teste executa uma simulação sem Telegram e sem alterar o estado.
+
+### Gerar e exportar
+
+Executa testes, gera o portal, abre uma prévia e exporta um ZIP limpo.

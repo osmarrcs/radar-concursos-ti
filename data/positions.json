@@ -381,6 +381,2074 @@
         }
       },
       "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-1-assistente-em-administracao-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Assistente em administração",
+      "specialty": "",
+      "position_code": "1",
+      "workload_hours": 40,
+      "level": "D",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 33,
+        "PN": 13,
+        "PQ": 1,
+        "PI": 2,
+        "PCD": 3
+      },
+      "immediate_vacancies": 52,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-2-desenhista-de-artes-graficas-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Desenhista de Artes Gráficas",
+      "specialty": "",
+      "position_code": "2",
+      "workload_hours": 40,
+      "level": "D",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-3-tecnico-em-contabilidade-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Técnico em contabilidade",
+      "specialty": "",
+      "position_code": "3",
+      "workload_hours": 40,
+      "level": "D",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-4-tecnico-de-tecnologia-da-informacao-desenvolvimento-de-sistemas-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Técnico de Tecnologia da Informação",
+      "specialty": "Desenvolvimento de Sistemas",
+      "position_code": "4",
+      "workload_hours": 40,
+      "level": "D",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 2,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-5-tecnico-de-tecnologia-da-informacao-dados-e-integracao-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Técnico de Tecnologia da Informação",
+      "specialty": "Dados e Integração",
+      "position_code": "5",
+      "workload_hours": 40,
+      "level": "D",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-6-tecnico-de-tecnologia-da-informacao-suporte-a-centro-de-dados-e-redes-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Técnico de Tecnologia da Informação",
+      "specialty": "Suporte a Centro de Dados e Redes",
+      "position_code": "6",
+      "workload_hours": 40,
+      "level": "D",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-7-tecnico-em-enfermagem-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Técnico em Enfermagem",
+      "specialty": "",
+      "position_code": "7",
+      "workload_hours": 40,
+      "level": "D",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 2,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-8-tecnico-em-radiologia-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Técnico em Radiologia",
+      "specialty": "",
+      "position_code": "8",
+      "workload_hours": 24,
+      "level": "D",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 2,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-9-administrador-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Administrador",
+      "specialty": "",
+      "position_code": "9",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-10-analista-de-tecnologia-da-informacao-desenvolvimento-de-sistemas-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Analista de Tecnologia da Informação",
+      "specialty": "Desenvolvimento de Sistemas",
+      "position_code": "10",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-11-analista-de-tecnologia-da-informacao-dados-e-analytics-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Analista de Tecnologia da Informação",
+      "specialty": "Dados e Analytics",
+      "position_code": "11",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-12-analista-de-tecnologia-da-informacao-datacenter-e-redes-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Analista de Tecnologia da Informação",
+      "specialty": "Datacenter e Redes",
+      "position_code": "12",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 0,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-13-arquiteto-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Arquiteto",
+      "specialty": "",
+      "position_code": "13",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-14-assistente-social-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Assistente Social",
+      "specialty": "",
+      "position_code": "14",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-15-bibliotecario-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Bibliotecário",
+      "specialty": "",
+      "position_code": "15",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 2,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-16-biologo-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Biólogo",
+      "specialty": "",
+      "position_code": "16",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 3,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 4,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-17-biomedico-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Biomédico",
+      "specialty": "",
+      "position_code": "17",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 2,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-18-contador-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Contador",
+      "specialty": "",
+      "position_code": "18",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 3,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 4,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-19-economista-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Economista",
+      "specialty": "",
+      "position_code": "19",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 2,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-20-enfermeiro-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Enfermeiro",
+      "specialty": "",
+      "position_code": "20",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 2,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 3,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-21-engenheiro-ambiental-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Engenheiro",
+      "specialty": "Ambiental",
+      "position_code": "21",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-22-engenheiro-civil-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Engenheiro",
+      "specialty": "Civil",
+      "position_code": "22",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-23-engenheiro-mecanica-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Engenheiro",
+      "specialty": "Mecânica",
+      "position_code": "23",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-24-engenheiro-eletricista-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Engenheiro",
+      "specialty": "Eletricista",
+      "position_code": "24",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 0,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-25-estatistico-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Estatístico",
+      "specialty": "",
+      "position_code": "25",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-26-medico-clinica-medica-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Médico",
+      "specialty": "Clínica Médica",
+      "position_code": "26",
+      "workload_hours": 20,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 0,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-27-medico-medicina-do-trabalho-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Médico",
+      "specialty": "Medicina do Trabalho",
+      "position_code": "27",
+      "workload_hours": 20,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-28-medico-ginecologia-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Médico",
+      "specialty": "Ginecologia",
+      "position_code": "28",
+      "workload_hours": 20,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-29-medico-psiquiatria-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Médico",
+      "specialty": "Psiquiatria",
+      "position_code": "29",
+      "workload_hours": 20,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-30-musico-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Músico",
+      "specialty": "",
+      "position_code": "30",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-31-nutricionista-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Nutricionista",
+      "specialty": "",
+      "position_code": "31",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-32-produtor-cultural-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Produtor Cultural",
+      "specialty": "",
+      "position_code": "32",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 2,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 3,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-33-psicologo-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Psicólogo",
+      "specialty": "",
+      "position_code": "33",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-34-tecnico-em-assuntos-educacionais-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Técnico em Assuntos Educacionais",
+      "specialty": "",
+      "position_code": "34",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 2,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-35-odontologo-cirurgia-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Odontólogo",
+      "specialty": "Cirurgia",
+      "position_code": "35",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-36-quimico-recife-vitoria-de-santo-antao-e-caruaru-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Químico",
+      "specialty": "",
+      "position_code": "36",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Recife, Vitória de Santo Antão e Caruaru",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-37-assistente-em-administracao-sertania-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Assistente em administração",
+      "specialty": "",
+      "position_code": "37",
+      "workload_hours": 40,
+      "level": "D",
+      "lotation": "Sertânia",
+      "vacancy_breakdown": {
+        "AC": 2,
+        "PN": 1,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 3,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-38-tecnico-em-contabilidade-sertania-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Técnico em contabilidade",
+      "specialty": "",
+      "position_code": "38",
+      "workload_hours": 40,
+      "level": "D",
+      "lotation": "Sertânia",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-39-bibliotecario-sertania-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Bibliotecário",
+      "specialty": "",
+      "position_code": "39",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Sertânia",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-40-contador-sertania-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Contador",
+      "specialty": "",
+      "position_code": "40",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Sertânia",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-41-engenheiro-civil-sertania-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Engenheiro",
+      "specialty": "Civil",
+      "position_code": "41",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Sertânia",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-42-medico-veterinario-sertania-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Médico Veterinário",
+      "specialty": "",
+      "position_code": "42",
+      "workload_hours": 20,
+      "level": "E",
+      "lotation": "Sertânia",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-43-psicologo-sertania-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Psicólogo",
+      "specialty": "",
+      "position_code": "43",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Sertânia",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
+    },
+    {
+      "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026-44-tecnico-em-assuntos-educacionais-sertania-todas-as-modalidades-do-edital",
+      "contest_id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
+      "position": "Técnico em Assuntos Educacionais",
+      "specialty": "",
+      "position_code": "44",
+      "workload_hours": 40,
+      "level": "E",
+      "lotation": "Sertânia",
+      "vacancy_breakdown": {
+        "AC": 1,
+        "PN": 0,
+        "PQ": 0,
+        "PI": 0,
+        "PCD": 0
+      },
+      "immediate_vacancies": 1,
+      "last_called_rank": null,
+      "last_called_score": null,
+      "total_appointed": null,
+      "quota_type": "Todas as modalidades do edital",
+      "sources": [
+        {
+          "label": "Edital nº 12/2026 anexado",
+          "url": "documents/editais/ufpe-edital-concurso-ufpe-2026-1.pdf"
+        }
+      ],
+      "collection_status": {
+        "found": true,
+        "code": "PARTIAL_DATA",
+        "reason": "Vaga extraída do edital; histórico de chamadas ainda não apurado.",
+        "source": "pdf_anexado"
+      },
+      "vacancy": {
+        "count": null,
+        "reference_date": "",
+        "reason": "Vacância ainda não apurada em fonte oficial específica.",
+        "sources": [],
+        "collection_status": {
+          "found": false,
+          "code": "VACANCY_NOT_FOUND",
+          "reason": "Nenhuma fonte de vacância cadastrada.",
+          "source": "vacancia"
+        }
+      },
+      "notes": "Cargo importado automaticamente do PDF e sujeito a conferência visual da tabela."
     }
   ]
 }

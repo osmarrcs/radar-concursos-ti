@@ -8,14 +8,16 @@
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-<header class="hero"><div class="container hero-grid"><div><p class="eyebrow">PROJETO OPEN SOURCE</p><h1>Radar de Concursos</h1><p class="subtitle">Escolha o órgão, consulte os três concursos mais recentes ou todos, selecione o edital e depois qualquer cargo ou especialidade cadastrada para ver vagas, validade, vacância, último chamado, nota e fontes.</p></div><div class="hero-status"><span id="updatedAt">Carregando base…</span><span class="status-dot"></span></div></div></header>
+<header class="hero"><div class="container hero-grid"><div><p class="eyebrow">PROJETO OPEN SOURCE</p><h1>Radar de Concursos</h1><p class="subtitle">Escolha o órgão, consulte concursos e cargos e acompanhe as últimas publicações encontradas automaticamente em fontes oficiais, GDELT e diários municipais configurados.</p></div><div class="hero-status"><span id="updatedAt">Carregando base…</span><span class="status-dot"></span></div></div></header>
 <main class="container">
-<section class="summary"><article class="metric"><span>Órgãos</span><strong id="metricOrgans">0</strong></article><article class="metric"><span>Concursos</span><strong id="metricContests">0</strong></article><article class="metric"><span>Cargos cadastrados</span><strong id="metricPositions">0</strong></article><article class="metric"><span>Concursos oficiais</span><strong id="metricOfficial">0</strong></article></section>
+<section class="summary"><article class="metric"><span>Órgãos</span><strong id="metricOrgans">0</strong></article><article class="metric"><span>Concursos</span><strong id="metricContests">0</strong></article><article class="metric"><span>Cargos cadastrados</span><strong id="metricPositions">0</strong></article><article class="metric"><span>Concursos oficiais</span><strong id="metricOfficial">0</strong></article><article class="metric"><span>Atualizações</span><strong id="metricUpdates">0</strong></article></section>
 <section class="notice" id="demoNotice" hidden><strong>Atenção:</strong> registros marcados como demonstração não representam nota, convocação ou vacância oficial.</section>
 
 <section class="panel flow-panel">
 <div class="step"><div class="step-number">1</div><div class="step-body"><p class="eyebrow dark">ÓRGÃO</p><h2>Qual órgão deseja consultar?</h2><div class="organ-picker"><select id="organSelect"><option value="">Selecione um órgão</option></select><input id="organSearch" type="search" placeholder="Pesquisar por nome ou sigla"></div><div id="organInfo" class="selection-info" hidden></div></div></div>
 </section>
+
+<section class="panel" id="updateSection" hidden><p class="eyebrow dark">ÚLTIMAS INFORMAÇÕES LOCALIZADAS</p><h2>Atualizações do órgão</h2><div id="organUpdates" class="updates-list"></div></section>
 
 <section class="panel" id="contestSection" hidden>
 <div class="step"><div class="step-number">2</div><div class="step-body"><div class="section-title"><div><p class="eyebrow dark">CONCURSOS</p><h2>Selecione um concurso</h2><p class="helper">Por padrão são exibidos os três mais recentes. Use “Ver todos” para consultar todo o histórico cadastrado.</p></div><button id="toggleAllContests" class="button secondary" type="button">Ver todos</button></div><div id="contestList" class="contest-grid"></div></div></div>

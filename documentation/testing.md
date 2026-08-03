@@ -1,17 +1,26 @@
-# TDD e testes
+# Testes e TDD
 
-O ciclo recomendado é **Red → Green → Refactor**.
+A suíte usa `unittest` e cobre:
 
-## Camadas
+- validação e relacionamentos dos JSONs;
+- build do portal;
+- importação do PDF;
+- classificação de eventos;
+- detecção de domínios oficiais;
+- deduplicação de resultados;
+- métricas do orquestrador;
+- criação da linha de base dos alertas;
+- execução repetida sem falsa novidade.
 
-- Unitários: slug, inferência, validação, parser e normalização de URL.
-- Integração: referências órgão/concurso/cargo, build e persistência.
-- Amostra: fluxo IFPE e Dataprev, separado das regras estruturais.
-
-## Executar
+Execução:
 
 ```bash
-python -m unittest discover -s tests -v
+PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
-O CI interrompe a publicação quando qualquer teste falha.
+Ciclo recomendado:
+
+1. escrever teste que falha;
+2. implementar o comportamento mínimo;
+3. refatorar;
+4. executar a suíte completa.

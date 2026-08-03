@@ -1,22 +1,21 @@
-# Alertas no Telegram
+# Telegram e métricas
 
-O monitor consulta apenas os órgãos selecionados em `data/alert_config.json` e somente as fontes oficiais cadastradas no órgão.
+## Configuração única
 
-## Secrets
+1. Crie o bot no `@BotFather`.
+2. Envie `/start` ao bot.
+3. Obtenha o `chat.id` com `getUpdates`.
+4. Crie no GitHub Actions os Secrets `TELEGRAM_BOT_TOKEN` e `TELEGRAM_CHAT_ID`.
+5. No painel do Colab, selecione os órgãos e salve.
 
-Crie em **Settings → Secrets and variables → Actions**:
+## Funcionamento
 
-- `TELEGRAM_BOT_TOKEN`
-- `TELEGRAM_CHAT_ID`
+- varredura de novidades: a cada seis horas;
+- resumo de métricas: diariamente às 08:30 no fuso de Recife;
+- primeira execução: cria a linha de base e não envia links antigos;
+- novidades: são enviadas e salvas em `data/updates.json`;
+- relatório de cada execução: armazenado como artifact do GitHub Actions por 30 dias.
 
-O endereço `t.me/osmarcs` não substitui o Chat ID de uma conversa privada. Envie `/start` ao bot e consulte `getUpdates` para obter o número.
+## Métricas
 
-## Persistência
-
-- `alert_state.json` muda apenas ao criar a linha de base ou registrar links novos.
-- `alert_last_run.json` é local e ignorado pelo Git.
-- O workflow só cria commit quando o estado realmente muda.
-
-## Fontes
-
-Prefira, nesta ordem: RSS/Atom, API oficial e HTML. URLs são normalizadas e parâmetros `utm_*`, `fbclid` e `gclid` são removidos.
+O resumo informa órgãos, provedores, itens analisados, relevantes, oficiais, novidades, erros e duração. O arquivo `data/alert_last_run.json` não é versionado.

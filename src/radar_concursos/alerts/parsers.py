@@ -1,15 +1,18 @@
 from __future__ import annotations
+
 from html.parser import HTMLParser
 from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 import xml.etree.ElementTree as ET
 
-TRACKING={"utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid","gclid"}
+TRACKING={"utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid","gclid","mc_cid","mc_eid"}
+
 
 def normalize_url(url: str) -> str:
     parts=urlsplit(url.strip())
     query=urlencode([(k,v) for k,v in parse_qsl(parts.query,keep_blank_values=True) if k.lower() not in TRACKING])
     path=parts.path.rstrip("/") or "/"
     return urlunsplit((parts.scheme.lower(),parts.netloc.lower(),path,query,""))
+
 
 class LinkParser(HTMLParser):
     def __init__(self,base_url: str):
@@ -22,11 +25,22 @@ class LinkParser(HTMLParser):
         if tag.lower()=="a" and self.href is not None:
             title=" ".join("".join(self.text).split())
             absolute=urljoin(self.base_url,self.href)
-            if absolute.startswith(("http://","https://")): self.items.append({"title":title or absolute,"url":normalize_url(absolute)})
+            if absolute.startswith(("http://","https://")):
+                self.items.append({"title":title or absolute,"url":normalize_url(absolute),"published_at":"","summary":""})
             self.href=None; self.text=[]
+
 
 def parse_html(content: str, base_url: str) -> list[dict[str,str]]:
     parser=LinkParser(base_url); parser.feed(content); return parser.items
+
+
+def _child_text(node: ET.Element, names: set[str]) -> str:
+    for child in node.iter():
+        tag=child.tag.rsplit("}",1)[-1].lower()
+        if tag in names and child.text:
+            return " ".join(child.text.split())
+    return ""
+
 
 def parse_feed(content: str, base_url: str) -> list[dict[str,str]]:
     root=ET.fromstring(content)
@@ -37,12 +51,26 @@ def parse_feed(content: str, base_url: str) -> list[dict[str,str]]:
         title=""; link=""
         for child in node:
             ctag=child.tag.rsplit("}",1)[-1].lower()
-            if ctag=="title" and child.text: title=child.text.strip()
+            if ctag=="title" and child.text: title=" ".join(child.text.split())
             elif ctag=="link": link=child.attrib.get("href") or (child.text or "").strip()
-        if link: items.append({"title":title or link,"url":normalize_url(urljoin(base_url,link))})
+        if link:
+            items.append({
+                "title":title or link,
+                "url":normalize_url(urljoin(base_url,link)),
+                "published_at":_child_text(node,{"pubdate","published","updated","date"}),
+                "summary":_child_text(node,{"description","summary","content"}),
+            })
     return items
+
 
 def deduplicate(items: list[dict[str,str]]) -> list[dict[str,str]]:
     unique={}
-    for item in items: unique.setdefault(normalize_url(item["url"]),{"title":item.get("title") or item["url"],"url":normalize_url(item["url"])})
+    for item in items:
+        key=normalize_url(item["url"])
+        unique.setdefault(key,{
+            "title":item.get("title") or item["url"],
+            "url":key,
+            "published_at":item.get("published_at", ""),
+            "summary":item.get("summary", ""),
+        })
     return list(unique.values())
