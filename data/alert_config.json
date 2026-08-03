@@ -1,7 +1,7 @@
 {
   "metadata": {
     "updated_at": "2026-07-31",
-    "schema_version": "3.0",
+    "schema_version": "4.0",
     "description": "Órgãos selecionados pelo usuário para monitoramento de notícias e publicações oficiais."
   },
   "enabled": true,
@@ -34,5 +34,7 @@
   },
   "search_days": 90,
   "daily_metrics": true,
-  "max_results_per_provider": 50
+  "max_results_per_provider": 50,
+  "notify_errors": true,
+  "notify_open_edicts": true
 }

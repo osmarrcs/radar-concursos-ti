@@ -1,34 +1,46 @@
-# Google Colab — painel único
+# Google Colab
 
-Não crie outro notebook e não execute células em sequência.
+## Abrir
 
-1. Suba o projeto no GitHub.
-2. Abra `Radar_Concursos_TI_Colab.ipynb` pelo botão **Open in Colab** ou pelo endereço do README.
-3. Execute a única célula.
-4. Use o menu exibido.
+`https://colab.research.google.com/github/osmarrcs/radar-concursos-ti/blob/main/Radar_Concursos_TI_Colab.ipynb`
 
-A célula executa `git pull` quando o projeto já existe na sessão ou `git clone` quando é a primeira abertura. Em seguida chama `radar_concursos.colab_app.launch()`.
+O notebook já está no repositório. Não crie outro. Execute a única célula.
 
-## Opções
+## Abas
 
-### Concurso na base
+### 1. Histórico por órgão
 
-Consulta sem alterar dados. Mostra as atualizações automáticas mais recentes do órgão.
+Fluxo nacional:
 
-### Buscar por órgão
+`Nacional → carreira → órgão → últimos 3 concursos ou todos → cargo`
 
-Informe estado e sigla/nome. Um órgão já existente usa nome, sigla, fontes e domínios cadastrados. Um nome ainda inexistente é usado temporariamente e só é salvo quando você decide persistir os resultados ou importar um PDF.
+Fluxo estadual/regional:
 
-A busca mostra métricas, erros por provedor e resultados selecionáveis. PDFs localizados podem ser encaminhados diretamente para o importador.
+`Estados → estado → carreira → órgão → últimos 3 concursos ou todos → cargo`
 
-### Adicionar por PDF
+A busca geral local fica na mesma aba e não exige seleção prévia. Se houver menos de três concursos na base, a opção **Buscar automaticamente quando houver menos de 3 concursos** consulta as fontes online do órgão e mostra os achados. O botão **Atualizar histórico e publicações** permite repetir a consulta a qualquer momento.
 
-Aceita upload ou URL. Mostra todos os cargos reconhecidos, sem filtro por TI. Vagas são extraídas do edital; vacância e histórico de chamadas continuam separados.
+### 2. Editais em aberto
 
-### Alertas e métricas
+O botão **Buscar editais abertos agora** descobre editais, inscrições e retificações dos órgãos filtrados. Depois, escolha um edital da base e no máximo dois cargos. O painel mostra e pesquisa:
 
-Seleciona órgãos, provedores, período e palavras-chave. O botão de teste executa uma simulação sem Telegram e sem alterar o estado.
+- vacância;
+- último convocado e classificação;
+- nota;
+- links de resultado, convocação, nomeação e quadro de pessoal.
 
-### Gerar e exportar
+### 3. Pesquisa automática
 
-Executa testes, gera o portal, abre uma prévia e exporta um ZIP limpo.
+Permite busca por âmbito, estado, carreira, órgão e termo livre. Usa fontes oficiais, GDELT e Querido Diário.
+
+### 4. Adicionar PDF faltante
+
+Use apenas se a pesquisa não localizar o edital ou se a importação estiver incompleta. O sistema verifica duplicidade antes de importar.
+
+### 5. Alertas
+
+Escolha os órgãos e as regras. O GitHub Actions executa o monitoramento sem depender da sessão do Colab.
+
+### 6. Gerar/Publicar
+
+Executa testes, gera o portal, permite visualizar e exportar um ZIP limpo.

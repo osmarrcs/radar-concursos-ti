@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "schema_version": "2.0",
+    "schema_version": "3.0",
     "description": "Concursos e informações comuns ao edital."
   },
   "contests": [
@@ -23,7 +23,9 @@
         "reason": "Registro de teste carregado da base local; nenhuma busca externa executada.",
         "source": "base_local"
       },
-      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional."
+      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional.",
+      "application_start": "",
+      "application_end": ""
     },
     {
       "id": "dataprev-2016",
@@ -44,7 +46,9 @@
         "reason": "Registro de teste carregado da base local; nenhuma busca externa executada.",
         "source": "base_local"
       },
-      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional."
+      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional.",
+      "application_start": "",
+      "application_end": ""
     },
     {
       "id": "dataprev-2012",
@@ -65,7 +69,9 @@
         "reason": "Registro de teste carregado da base local; nenhuma busca externa executada.",
         "source": "base_local"
       },
-      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional."
+      "notes": "Dado fictício criado apenas para testar o âmbito federal nacional.",
+      "application_start": "",
+      "application_end": ""
     },
     {
       "id": "ifpe-tae-2025",
@@ -103,7 +109,9 @@
         "reason": "Edital, resultado e homologação foram localizados; o ato consolidado do último convocado/nomeado por cargo ainda não foi cadastrado.",
         "source": "fontes_oficiais"
       },
-      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada."
+      "notes": "As vagas do edital são oficiais. Último chamado, nota e vacância só serão exibidos quando houver fonte específica vinculada.",
+      "application_start": "",
+      "application_end": ""
     },
     {
       "id": "ifpe-tae-2019",
@@ -129,7 +137,9 @@
         "reason": "Cargo localizado, mas vagas, resultado e último chamado ainda não foram consolidados.",
         "source": "portal_ifpe"
       },
-      "notes": "O cargo consta na notícia oficial; quantitativos e histórico de chamadas ainda precisam ser importados do edital e dos atos."
+      "notes": "O cargo consta na notícia oficial; quantitativos e histórico de chamadas ainda precisam ser importados do edital e dos atos.",
+      "application_start": "",
+      "application_end": ""
     },
     {
       "id": "ifpe-tae-2016",
@@ -150,7 +160,9 @@
         "reason": "Fontes oficiais deste concurso ainda não foram cadastradas.",
         "source": "base_local"
       },
-      "notes": "Registro demonstrativo até a inclusão de fontes oficiais do certame."
+      "notes": "Registro demonstrativo até a inclusão de fontes oficiais do certame.",
+      "application_start": "",
+      "application_end": ""
     },
     {
       "id": "ufpe-concurso-tae-ufpe-2026-edital-no-12-2026-2026",
@@ -182,7 +194,9 @@
         "reason": "Edital anexado e cargos importados; vacância e chamadas dependem de fontes separadas.",
         "source": "pdf_anexado"
       },
-      "notes": "O edital informa vagas, lotação e regra de validade. Vacância atual, último chamado e nota não são inferidos do edital e devem ser apurados em documentos próprios."
+      "notes": "O edital informa vagas, lotação e regra de validade. Vacância atual, último chamado e nota não são inferidos do edital e devem ser apurados em documentos próprios.",
+      "application_start": "",
+      "application_end": ""
     }
   ]
 }

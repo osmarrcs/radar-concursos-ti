@@ -1,67 +1,137 @@
-# Radar de Concursos
+# Radar de Concursos de TI
 
-Portal estático e painel administrativo no Google Colab para acompanhar concursos por órgão, edital e cargo.
+Portal e painel administrativo em nuvem para acompanhar concursos nacionais e dos estados de PE, PB, AL, RN, SE, CE e MA.
 
-## Fluxo do Colab
+## O que esta versão faz de verdade
 
-O notebook possui **uma única célula executável**. Ela baixa/atualiza o repositório e abre um painel com cinco opções independentes:
+Há dois tipos de informação:
 
-1. **Concurso na base** — órgão → três concursos mais recentes ou todos → cargo → detalhes.
-2. **Buscar por órgão** — estado + sigla/nome; consulta fontes oficiais cadastradas, GDELT e Querido Diário quando aplicável.
-3. **Adicionar por PDF** — anexa ou baixa um edital, reconhece todos os cargos e permite escolher quais importar.
-4. **Alertas e métricas** — escolhe órgãos, provedores, período e palavras-chave.
-5. **Gerar e exportar** — testa, gera, visualiza e baixa o ZIP.
+1. **Concurso estruturado** — possui edital, cargos, vagas e campos próprios. Fica em `data/contests.json` e `data/positions.json`.
+2. **Descoberta automática** — publicação localizada na internet, ainda sem cargos estruturados. Fica em `data/discovered_contests.json` e aparece no portal com o link da fonte.
 
-Abrir no Colab:
+A pesquisa automática agora **persiste** os resultados. Ela não apenas mostra links temporariamente no Colab.
 
-`https://colab.research.google.com/github/osmarrcs/radar-concursos-ti/blob/main/Radar_Concursos_TI_Colab.ipynb`
+O processo diário:
 
-## Busca automática
+```text
+105 órgãos cadastrados
+        ↓
+fontes oficiais + GDELT + Querido Diário
+        ↓
+data/updates.json
+        ↓
+data/discovered_contests.json
+        ↓
+PDF oficial direto, quando reconhecido
+        ↓
+importação automática de todos os cargos compatíveis com o parser
+        ↓
+GitHub Pages e Telegram
+```
 
-A busca usa provedores independentes:
+Não é tecnicamente seguro inventar vacância, nota ou último convocado quando a fonte não traz esses dados em formato relacionável. Nesses casos, o sistema mantém os documentos encontrados e marca revisão necessária.
 
-- páginas HTML/RSS oficiais cadastradas no órgão;
-- GDELT DOC 2.0 para descoberta de notícias;
-- Querido Diário para órgãos municipais que possuam `territory_id` (código IBGE);
-- PDF anexado ou localizado por URL.
+## Links
 
-Os resultados são classificados como edital, retificação, inscrição, resultado, homologação, convocação, nomeação, prorrogação, banca, comissão, autorização, vacância ou notícia.
+- Repositório: `https://github.com/osmarrcs/radar-concursos-ti`
+- Portal: `https://osmarrcs.github.io/radar-concursos-ti/`
+- Colab: `https://colab.research.google.com/github/osmarrcs/radar-concursos-ti/blob/main/Radar_Concursos_TI_Colab.ipynb`
 
-Resultados oficiais podem atualizar automaticamente o status do concurso correspondente, preservando o link como evidência. A atualização aparece em `data/updates.json` e no portal.
+## Primeira publicação
 
-## Alertas
+Envie todo o conteúdo do ZIP para a raiz do repositório, inclusive a pasta oculta `.github`.
 
-O GitHub Actions faz uma varredura a cada seis horas e um resumo diário às 08:30 no fuso `America/Recife`.
+A raiz precisa conter:
 
-Métricas enviadas:
+```text
+.github/
+data/
+documentation/
+documents/
+src/
+tests/
+web/
+README.md
+Radar_Concursos_TI_Colab.ipynb
+```
 
-- órgãos consultados;
-- provedores executados e com sucesso;
-- itens analisados;
-- itens relevantes e oficiais;
-- novidades;
-- erros;
-- duração.
+Em `Settings → Pages`, escolha **GitHub Actions**.
 
-Secrets necessários:
+Depois execute manualmente uma vez:
 
-- `TELEGRAM_BOT_TOKEN`
-- `TELEGRAM_CHAT_ID`
+```text
+Actions → Sincronização automática da base → Run workflow
+```
 
-## Dados
+A partir daí a sincronização executará diariamente e poderá ser iniciada manualmente a qualquer momento.
 
-- `data/organs.json`: órgãos, domínios e fontes oficiais.
-- `data/contests.json`: concursos.
-- `data/positions.json`: cargos/especialidades.
-- `data/updates.json`: atualizações descobertas.
-- `data/alert_config.json`: seleção e regras dos alertas.
-- `data/alert_state.json`: URLs já conhecidas.
+## Colab
 
-## Testes e build
+O Colab não executa nada no seu computador. O código roda em uma máquina virtual do Google.
+
+1. Abra o link do Colab.
+2. Execute a única célula.
+3. Na primeira aba, escolha âmbito → carreira → órgão.
+4. Clique em **Sincronizar todos os órgãos agora** para atualizar imediatamente.
+5. Use **Salvar direto no GitHub** para publicar sem baixar ZIP.
+
+Para o botão de publicação, crie no Colab o Secret:
+
+```text
+GH_TOKEN
+```
+
+Use um Fine-grained Personal Access Token limitado ao repositório, com `Contents: Read and write`.
+
+## Automação no GitHub
+
+### `sync.yml`
+
+- pesquisa todos os órgãos diariamente;
+- grava atualizações e descobertas;
+- tenta importar PDFs oficiais diretos;
+- executa testes;
+- gera e publica o portal;
+- salva métricas como artifact.
+
+### `alerts.yml`
+
+- monitora apenas os órgãos escolhidos pelo usuário;
+- envia novidades e métricas ao Telegram;
+- usa `TELEGRAM_BOT_TOKEN` e `TELEGRAM_CHAT_ID` nos Secrets do GitHub.
+
+### `ci-pages.yml`
+
+- executa os testes em alterações do código;
+- gera e publica o portal.
+
+## Organização dos dados
+
+- `data/organs.json`: catálogo de órgãos e carreiras;
+- `data/contests.json`: concursos confirmados/estruturados;
+- `data/positions.json`: cargos e especialidades;
+- `data/updates.json`: publicações coletadas automaticamente;
+- `data/discovered_contests.json`: candidatos a concursos extraídos das publicações;
+- `data/alert_config.json`: órgãos e regras do Telegram;
+- `data/alert_state.json`: links já conhecidos pelo monitor.
+
+## Limitações reais
+
+A automação consegue descobrir publicações, persistir links, classificar eventos e importar alguns editais tabulares. Não existe uma API pública única que forneça, para todos os órgãos:
+
+- três concursos históricos completos;
+- vacância atual por cargo;
+- nome do último convocado;
+- nota correspondente;
+- separação correta por localidade e modalidade.
+
+Essas métricas dependem de documentos distintos. O sistema pesquisa e organiza as evidências; a extração automática só é aplicada quando o parser consegue relacionar os dados sem ambiguidade.
+
+## Testes
 
 ```bash
 PYTHONPATH=src python -m unittest discover -s tests -v
 PYTHONPATH=src python -m radar_concursos.build
 ```
 
-O portal é gerado em `dist/` e publicado automaticamente no GitHub Pages.
+A versão inclui testes para garantir que uma publicação de um órgão sem concurso pré-carregado seja persistida como atualização e descoberta automática, sem duplicação em execuções posteriores.
